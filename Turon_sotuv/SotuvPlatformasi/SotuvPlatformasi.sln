@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SotuvPlatformasi", "SotuvPlatformasi\SotuvPlatformasi.csproj", "{4F97A197-F231-4429-80A2-F836E7D9CBE6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TuronFilial", "TuronFilial\TuronFilial.vdproj", "{3004ADC2-9766-403D-85A2-5B385E322824}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		All|Any CPU = All|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.All|Any CPU.ActiveCfg = Release|Any CPU
+		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.All|Any CPU.Build.0 = Release|Any CPU
+		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F97A197-F231-4429-80A2-F836E7D9CBE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3004ADC2-9766-403D-85A2-5B385E322824}.All|Any CPU.ActiveCfg = Debug
+		{3004ADC2-9766-403D-85A2-5B385E322824}.Debug|Any CPU.ActiveCfg = Debug
+		{3004ADC2-9766-403D-85A2-5B385E322824}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {175157DE-B6BF-4ED1-AB7B-6ACDFBA16D5C}
+	EndGlobalSection
+EndGlobal

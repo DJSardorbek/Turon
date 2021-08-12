@@ -1,0 +1,119 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SotuvPlatformasi"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="SotuvPlatformasi.MainWindow"
+        mc:Ignorable="d"
+        Title="Sotuv platformasi" Loaded="Window_Loaded" 
+        KeyDown="Window_KeyDown" Height="724" Width="1240" 
+        KeyUp="Window_KeyUp" PreviewKeyDown="Window_PreviewKeyDown"
+        PreviewKeyUp="Window_PreviewKeyUp"
+        WindowStartupLocation="CenterScreen" Background="#FF17223B" 
+        Icon="hnet.com-image.ico" BorderBrush="#FF17223B" BorderThickness="0">
+    <Grid>
+        <TabControl x:Name="TabMenu" Background="#FF17223B" BorderThickness="0">
+            <!-- kirish oynasi item=0-->
+            <TabItem x:Name="ItemKirish" BorderThickness="0" Visibility="Collapsed">
+                <local:Kirish_ucont/>
+            </TabItem>
+
+            <!--Asosiy item=1-->
+            <TabItem x:Name="ItemAsosiy" BorderThickness="0" Visibility="Collapsed">
+                <local:Asosiy_ucont/>
+            </TabItem>
+
+            <!--Sotuv item=2-->
+            <TabItem x:Name="ItemSotuv" BorderThickness="0" Visibility="Collapsed">
+                <local:Sotuv_ucont/>
+            </TabItem>
+
+            <!--Navbat item=3-->
+            <TabItem x:Name="ItemNavbat" BorderThickness="0" Visibility="Collapsed">
+                <local:Navbat_ucont/>
+            </TabItem>
+
+            <!--fakt_qab item=4-->
+            <TabItem x:Name="ItemFakt_qab" BorderThickness="0" Visibility="Collapsed">
+                <local:faktura_all/>
+            </TabItem>
+
+            <!--fakt ko'rish item=5-->
+            <TabItem x:Name="ItemFakt_kurish" BorderThickness="0" Visibility="Collapsed">
+                <local:faktura_kurish_ucont/>
+            </TabItem>
+
+            <!--Sozlamar item=6-->
+            <TabItem x:Name="ItemSozlamalar" BorderThickness="0" Visibility="Collapsed">
+                <local:Sozlamalar_ucont/>
+            </TabItem>
+
+            <!--Sozlamar item=7-->
+            <TabItem x:Name="ItemFakturaHisob" BorderThickness="0" Visibility="Collapsed">
+                <local:FakturaHisob_ucont/>
+            </TabItem>
+
+            <!--Filiallar Bazasi item=8-->
+            <TabItem x:Name="ItemFiliallarBazasi" BorderThickness="0" Visibility="Collapsed">
+                <local:Filiallar_bazasi_ucont/>
+            </TabItem>
+
+            <!--Qarzdorlar item=9-->
+            <TabItem x:Name="ItemQarzdorlar" BorderThickness="0" Visibility="Collapsed">
+                <local:Qarzdorlar_ucont/>
+            </TabItem>
+
+            <!--Tovar qoldiq item=10-->
+            <TabItem x:Name="ItemTovarQoldiq" BorderThickness="0" Visibility="Collapsed">
+                <local:Tovar_qoldiq_ucont/>
+            </TabItem>
+
+            <!--Hisbot item=11-->
+            <TabItem x:Name="ItemHisobot" BorderThickness="0" Visibility="Collapsed">
+                <local:Hisobot_ucont/>
+            </TabItem>
+
+            <!--Tul_qab item=12-->
+            <TabItem x:Name="ItemTulQab" BorderThickness="0" Visibility="Collapsed">
+                <local:Tul_qab_ucont/>
+            </TabItem>
+
+            <!--Tul_qab item=13-->
+            <TabItem x:Name="ItemQaytuv" BorderThickness="0" Visibility="Collapsed">
+                <local:qaytuv_ucont/>
+            </TabItem>
+
+            <!--DebtorReport item=14-->
+            <TabItem x:Name="ItemDebtorReport" BorderThickness="0" Visibility="Collapsed">
+                <local:DebtorReport/>
+            </TabItem>
+
+            <!--Change price item=15-->
+            <TabItem x:Name="ItemChangePrice" BorderThickness="0" Visibility="Collapsed">
+                <local:ChangePrice_ucont/>
+            </TabItem>
+
+            <!--Price Report item=16-->
+            <TabItem x:Name="ItemPriceReport" BorderThickness="0" Visibility="Collapsed">
+                <local:PriceReport_ucont/>
+            </TabItem>
+
+            <!--ReturnDeliver item=17-->
+            <TabItem x:Name="ItemReturnDeliver" BorderThickness="0" Visibility="Collapsed">
+                <local:ReturnDeliver_ucont/>
+            </TabItem>
+
+            <!--ReturnDeliverReport item=18-->
+            <TabItem x:Name="ItemReturnDeliverReport" BorderThickness="0" Visibility="Collapsed">
+                <local:ReturnDeliverReport_ucont/>
+            </TabItem>
+
+            <!--DebtorPayHistory item=19-->
+            <TabItem x:Name="ItemDebtorPayHistory" BorderThickness="0" Visibility="Collapsed">
+                <local:DebtorPayHistory_ucont/>
+            </TabItem>
+
+        </TabControl>
+    </Grid>
+</Window>

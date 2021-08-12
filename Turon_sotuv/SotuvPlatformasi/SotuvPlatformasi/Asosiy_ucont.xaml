@@ -1,0 +1,190 @@
+﻿<UserControl x:Class="SotuvPlatformasi.Asosiy_ucont"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:SotuvPlatformasi"
+             mc:Ignorable="d" 
+             d:DesignHeight="724" d:DesignWidth="1240" KeyDown="UserControl_KeyDown">
+    <Grid Background="#FF17223B">
+        <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid Margin="0 60 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid Margin="20 0 30 0" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="BtnSotuv" Click="BtnSotuv_Click" Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Vector.png" Width="67" Height="66"/>
+                        <TextBlock Text="Sotuv" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F1" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 0 30 0" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Style="{StaticResource BtnMenu}" Click="Button_Click">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Navbat.png" Width="67" Height="66"/>
+                        <TextBlock Text="Navbat" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F2" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 0 30 0" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="btnQaytuv" Click="btnQaytuv_Click" Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Qaytuv.png" Width="67" Height="66"/>
+                        <TextBlock Text="Qaytuv" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F3" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 0 30 0" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="btnTovarQoldiq" Click="btnTovarQoldiq_Click" Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Tovar_qoldiq.png" Width="67" Height="66"/>
+                        <TextBlock Text="Tovar qoldiq" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F4" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="20 30 30 0" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="btnQarzdorlar" Click="btnQarzdorlar_Click" Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Qarzdorlar.png" Width="67" Height="66"/>
+                        <TextBlock Text="Qarzdorzlar" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F5" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 30 30 0" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="Faktura_qabul" Click="Faktura_qabul_Click" Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Faktura_qabul.png" Width="67" Height="66"/>
+                        <TextBlock Text="Faktura qabul" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F6" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 30 30 0" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="btnFakturaHisob" Click="btnFakturaHisob_Click" Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Faktura_hisob.png" Width="67" Height="66"/>
+                        <TextBlock Text="Faktura hisob" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F7" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 30 30 0" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button x:Name="btnHisobot" Click="btnHisobot_Click" Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/hisobot.png" Width="67" Height="66"/>
+                        <TextBlock Text="Hisobot" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F8" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="20 30 30 0" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Style="{StaticResource BtnMenu}" Click="Button_Click_2">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Filiallar_bazasi.png" Width="67" Height="66"/>
+                        <TextBlock Text="Filiallar bazasi" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F9" Foreground="#6B778D" Width="20" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="220 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 30 30 0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Style="{StaticResource BtnMenu}" Click="Button_Click_1">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Sozlamalar.png" Width="67" Height="66"/>
+                        <TextBlock Text="Sozlamalar" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F10" Foreground="#6B778D" Width="30" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="210 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+            <Grid Margin="0 30 30 0" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button 
+                    x:Name="btnChangePrice"
+                    Click="btnChangePrice_Click"
+                    Style="{StaticResource BtnMenu}">
+                    <StackPanel Width="240">
+                        <Image Source="Resources/Peremisheniya.png" Width="67" Height="66"/>
+                        <TextBlock Text="Narx o'zgartirish" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                        <Label Content="F11" Foreground="#6B778D" Width="30" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="210 0 0 0"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+                <Grid Margin="0 30 30 0" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Button x:Name="BtnReturnDeliver" Click="BtnReturnDeliver_Click" Style="{StaticResource BtnMenu}">
+                        <StackPanel Width="240">
+                            <materialDesign:PackIcon
+                                Kind="TruckDelivery"
+                                Width="67"
+                                Height="66"
+                                Foreground="#6B778D"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"/>
+                            <TextBlock Text="Tovar. Qaytarish" HorizontalAlignment="Center" FontSize="20" FontFamily="Segoe UI" Margin="0 20 0 0"/>
+                            <Label Content="F12" Foreground="#6B778D" Width="30" Height="20"  FontFamily="Segoe UI" FontSize="10" Margin="210 0 0 0"/>
+                        </StackPanel>
+                    </Button>
+                </Grid>
+
+                <Grid Margin="20 50 0 0" Grid.Row="3" Grid.ColumnSpan="4">
+                    <Button x:Name="BtnLogOut" Click="BtnLogOut_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="Resources/Pr_chiqish.png" Width="21" Height="17" Margin="-110 0 0 0"/>
+                            <TextBlock Text="Profildan chiqish" VerticalAlignment="Center"/>
+
+                        </StackPanel>
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}">
+                                <Setter Property="Width" Value="300"/>
+                                <Setter Property="Height" Value="40"/>
+                                <Setter Property="VerticalAlignment" Value="Bottom"/>
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="Margin" Value="0 0 0 30"/>
+                                <Setter Property="Background" Value="#F75940"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontFamily" Value="Segoe UI"/>
+                                <Setter Property="FontSize" Value="20px"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border
+                                    CornerRadius="10"
+                                    Background="{TemplateBinding Background}"
+                                    BorderThickness="{TemplateBinding BorderThickness}">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                                                </ContentPresenter>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#F59960"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+
+                        </Button.Style>
+                    </Button>
+                </Grid>
+
+            </Grid>
+
+        </DockPanel>
+    </Grid>
+</UserControl>

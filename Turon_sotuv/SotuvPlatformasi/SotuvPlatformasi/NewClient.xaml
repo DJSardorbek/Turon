@@ -1,0 +1,102 @@
+﻿<Window x:Class="SotuvPlatformasi.NewClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SotuvPlatformasi"
+        mc:Ignorable="d"
+        Title="NewClient" 
+        Height="450" Width="500"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        BorderThickness="2" 
+        BorderBrush="#263859">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14px"/>
+            <Setter Property="Foreground" Value="#6B778C"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#17223B"/>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#17223B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- first row client fullname-->
+        <Grid Grid.Row="0" Margin="20 50 20 0">
+        <TextBox
+            x:Name="txtMijozFish"
+            Style="{StaticResource TextBoxes}"
+            />
+            <TextBlock
+                Text="Mijoz fish"
+                Width="80"
+                Margin="-330 -45 0 0"/>
+        </Grid>
+        <!--second row client phone1-->
+        <Grid Grid.Row="1" Margin="20 50 20 0">
+            <TextBox
+            x:Name="txtPhone1"
+            Style="{StaticResource TextBoxes}"
+            />
+            <TextBlock
+                Text="Telefon 1"
+                Width="80"
+                Margin="-330 -45 0 0"/>
+        </Grid>
+        <!--third row client phone2-->
+        <Grid Grid.Row="2" Margin="20 50 20 0">
+            <TextBox
+            x:Name="txtPhone2"
+            Style="{StaticResource TextBoxes}"
+            />
+            <TextBlock
+                Text="Telefon 2"
+                Width="80"
+                Margin="-330 -45 0 0"/>
+        </Grid>
+        <!--fourth row buttons-->
+        <Grid Grid.Row="3" Margin="20 50 20 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <!--first column add button-->
+            <Grid Grid.Column="0">
+                <Button
+                    x:Name="btnAdd"
+                    Click="btnAdd_Click"
+                    Style="{StaticResource SotuvHeader}"
+                    Width="120"
+                    Height="50">
+                    <TextBlock 
+                        Text="Qo'shish"
+                        Background="Transparent"/>
+                </Button>
+            </Grid>
+            <!--second column cancel button-->
+            <Grid Grid.Column="1">
+                <Button
+                    x:Name="btnCancel"
+                    Click="btnCancel_Click"
+                    Style="{StaticResource SotuvHeader}"
+                    Width="120"
+                    Height="50">
+                    <TextBlock
+                        Text="Bekor qilish"
+                        Background="Transparent"/>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

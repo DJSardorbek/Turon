@@ -1,0 +1,177 @@
+﻿<Window x:Class="SotuvPlatformasi.EditPrice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:SotuvPlatformasi"
+        mc:Ignorable="d"
+        Title="EditPrice" Height="500" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        BorderThickness="2"
+        BorderBrush="#263859"
+        Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="18px"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="30 0 0 0"/>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="SnapsToDevicePixels"
+                                        Value="True" />
+            <Setter Property="OverridesDefaultStyle"
+                                         Value="True" />
+            <Setter Property="KeyboardNavigation.TabNavigation"
+                                        Value="None" />
+            <Setter Property="FocusVisualStyle"
+                                        Value="{x:Null}" />
+            <Setter Property="MinWidth"
+                                         Value="120" />
+            <Setter Property="MinHeight"
+                                        Value="35" />
+            <Setter Property="AllowDrop"
+                                        Value="true" />
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="12px"/>
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBoxBase}">
+                        <Border Name="Border"
+                            CornerRadius="5"
+                            Padding="30 10 10 10"
+                            BorderThickness="1">
+                            <Border.Background>
+                                <SolidColorBrush Color="{DynamicResource ControlLightColor}" />
+                            </Border.Background>
+                            <Border.BorderBrush>
+                                <SolidColorBrush Color="#263859" />
+                            </Border.BorderBrush>
+                            <ScrollViewer Margin="0"
+                            x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#17223B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" 
+              Margin="0,50,0,10">
+            <TextBlock Text="Maxsulot :"/>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1"
+              Margin="0,50,0,10">
+            <TextBox
+                x:Name="txtProduct"
+                IsReadOnly="True"
+                Height="50"
+                Margin="20 0 20 0"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Margin="0,20,0,10">
+            <TextBlock Text="Avvalgi narx :"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1" Margin="0,20,0,10">
+            <TextBox
+                x:Name="txtOldPrice"
+                IsReadOnly="True"
+                Height="50"
+                Margin="20 0 20 0"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Margin="0,20,0,10">
+            <TextBlock Text="Val. o'lchov :"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="1" Margin="0,20,0,10">
+            <TextBox
+                x:Name="txtVal_ul"
+                Height="50"
+                Margin="20 0 20 0"
+                IsReadOnly="True"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="0" Margin="0,20,0,10">
+            <TextBlock Text="Yangi narx :"/>
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="1" Margin="0,20,0,10">
+            <TextBox
+                x:Name="txtNewPrice"
+                Height="50"
+                Margin="20 0 20 0"/>
+        </Grid>
+
+
+        <Grid Grid.Row="4" Grid.ColumnSpan="2"
+              Margin="0 40 0 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="btnEdit"
+                Click="btnEdit_Click"
+                Grid.Column="0"
+                Style="{StaticResource SotuvHeader}"
+                Height="50"
+                Width="150">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon 
+                        Kind="CircleArrows"
+                        VerticalAlignment="Center"
+                        Width="20"
+                        Height="20"
+                        Margin="5 0 10 0"/>
+                    <TextBlock
+                    Text="O'zgartirish"
+                    Margin="0 0 0 0"
+                    FontSize="16px"/>
+                </StackPanel>
+            </Button>
+            <Button
+                x:Name="btnCancel"
+                Click="btnCancel_Click"
+                Grid.Column="1"
+                Style="{StaticResource SotuvHeader}"
+                Height="50"
+                Width="150">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon 
+                        Kind="CancelCircleOutline"
+                        VerticalAlignment="Center"
+                        Width="20"
+                        Height="20"
+                        Margin="5 0 10 0"/>
+                    <TextBlock
+                    Text="Bekor qilish"
+                    Margin="0 0 0 0"
+                    FontSize="16px"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

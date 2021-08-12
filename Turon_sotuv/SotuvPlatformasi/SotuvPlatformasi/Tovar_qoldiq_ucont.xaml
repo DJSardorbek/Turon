@@ -1,0 +1,567 @@
+﻿<UserControl x:Class="SotuvPlatformasi.Tovar_qoldiq_ucont"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SotuvPlatformasi"
+             mc:Ignorable="d" 
+             d:DesignHeight="724" d:DesignWidth="1240" 
+             Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <local:MyBkColorConverter x:Key="bkColorCvrt"/>
+    </UserControl.Resources>
+    <Grid Background="#17223B">
+        <Grid Margin="0 40 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!-- 1 - qator -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- 1 ustun -->
+                <!--<Grid>
+                    <TextBox x:Name="txtSearch" TextChanged="txtSearch_TextChanged" Style="{StaticResource TextBoxes}" Height="50" Margin="25 0 0 15"/>
+
+                    <Grid Background="#17223B" Height="20" Width="130" Margin="50 -65 0 0" HorizontalAlignment="Left">
+                        <TextBlock Text="Maxsulot nomi" Foreground="#6B778C" FontFamily="Segoe UI" FontSize="16px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Grid>
+                    <materialDesign:PackIcon Foreground="#6B778C" Kind="Search" Margin="0 -10 20 0" Width="25" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                </Grid>-->
+                
+                <!-- 2 ustun -->
+                <Grid Grid.Column="1" Margin="20 0 25 15">
+                    <ComboBox x:Name="comboFilial" 
+                            Foreground="White" 
+                            Style="{StaticResource ComboBoxTest2}" 
+                            Width="350" Height="45" 
+                            HorizontalAlignment="Right" 
+                             
+                            FontFamily="Segoe UI" 
+                            FontSize="23px"
+                            SelectionChanged="comboFilial_SelectionChanged">
+
+                    </ComboBox>
+                </Grid>
+            </Grid>
+            <!-- 2 - qator -->
+            <!--DataGRid-->
+            <Grid x:Name="StackKam"  Margin="0 0 0 10" Grid.Row="1" HorizontalAlignment="Stretch" Width="Auto">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ScrollViewer x:Name="scrollViewer" VerticalScrollBarVisibility="Disabled">
+                    <ScrollViewer.Style>
+                        <Style TargetType="ScrollViewer">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasItems, ElementName=dataGridProductKam}" Value="False">
+                                    <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ScrollViewer.Style>
+                    <DataGrid x:Name="dataGridProductKam"
+                    HorizontalScrollBarVisibility="Auto" 
+                    Width="Auto"
+                    HorizontalGridLinesBrush="#263859"
+                    AutoGenerateColumns="False"
+                    GridLinesVisibility="Horizontal"
+                    CanUserAddRows="False"
+                    CanUserDeleteRows="False"
+                    IsReadOnly="True"
+                    CanUserReorderColumns="False"
+                    CanUserResizeColumns="False"
+                    CanUserResizeRows="False"
+                    Background="#FF17223B"
+                    BorderThickness="1" SelectionMode="Single" SelectionUnit="FullRow"
+                    Margin="25 0 20 10"
+                          
+                          >
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGrid" BasedOn="{StaticResource MaterialDesignDataGrid}">
+                                <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+                            </Style>
+                            <Style TargetType="DataGridCell" BasedOn="{StaticResource MaterialDesignDataGridCell}">
+                                <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+
+                                <Setter Property="Foreground" Value="#F75940"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#263859"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                            <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Height" Value="44"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Style.Triggers>
+
+                                </Style.Triggers>
+                            </Style>
+                            <!--Scrolbar uchun style-->
+                            <Style TargetType="ScrollBar">
+                                <Setter Property="Background" Value="#263859"/>
+                            </Style>
+                        </DataGrid.Resources>
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="KOD" Binding="{Binding product_id}" Width="100"/>
+                            <DataGridTextColumn Header="MAXSULOT" Binding="{Binding name}" Width="300*"/>
+                            <DataGridTextColumn Header="O'LCHOV" Binding="{Binding measurement}" Width="100"/>
+                            <DataGridTextColumn Header="ZAVOD" Binding="{Binding preparer}" Width="200*"/>
+                            <DataGridTextColumn Header="MIQDOR" Binding="{Binding quantity}" Width="150"/>
+                            <DataGridTextColumn Header="NARXI" Binding="{Binding price}" Width="150*"/>
+                            <DataGridTextColumn Header="VAL. O'LCHOV" Binding="{Binding val_ul}" Width="130"/>
+                            <DataGridTextColumn Header="SHTRIX KOD" Binding="{Binding barcode}" Width="200*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    
+                </ScrollViewer>
+                <Grid x:Name="GridPage" Grid.Row="1" Width="200" Visibility="Collapsed">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" x:Name="btnPreviusKam"
+                            IsEnabled="False" 
+                            Opacity="0.5"
+                            Click="btnPreviusKam_Click">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"/>
+                        </StackPanel>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Width" Value="50"/>
+                                <Setter Property="Height" Value="50"/>
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="BorderBrush" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border
+                                                CornerRadius="50"
+                                                Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderThickness" Value="2"/>
+                                        <Setter Property="BorderBrush" Value="#455A64"/>
+                                        <Setter Property="Background" Value="#455A64"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Grid.Column="1" x:Name="btnNextKam"
+                            Click="btnNextKam_Click">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ArrowRight" Width="25" Height="25"/>
+                        </StackPanel>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Width" Value="50"/>
+                                <Setter Property="Height" Value="50"/>
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="BorderBrush" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border
+                                                CornerRadius="50"
+                                                Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderThickness" Value="2"/>
+                                        <Setter Property="BorderBrush" Value="#455A64"/>
+                                        <Setter Property="Background" Value="#455A64"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Grid>
+            </Grid>
+
+            <!-- O'rta --> 
+            <Grid x:Name="StackUrta" Margin="0 0 0 10" Grid.Row="1" HorizontalAlignment="Stretch" Width="Auto" Visibility="Visible">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ScrollViewer x:Name="scrollView" VerticalScrollBarVisibility="Disabled">
+                    <ScrollViewer.Style>
+                        <Style TargetType="ScrollViewer">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasItems, ElementName=dataGridProductUrta}" Value="False">
+                                    <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ScrollViewer.Style>
+                    <DataGrid x:Name="dataGridProductUrta"
+                    HorizontalScrollBarVisibility="Auto" 
+                    Width="Auto"
+                    HorizontalGridLinesBrush="#263859"
+                    AutoGenerateColumns="False"
+                    GridLinesVisibility="Horizontal"
+                    CanUserAddRows="False"
+                    CanUserDeleteRows="False"
+                    IsReadOnly="True"
+                    CanUserReorderColumns="False"
+                    CanUserResizeColumns="False"
+                    CanUserResizeRows="False"
+                    Background="#FF17223B"
+                    BorderThickness="1" SelectionMode="Single" SelectionUnit="FullRow"
+                    Margin="25 0 20 10"
+                          
+                          >
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGrid" BasedOn="{StaticResource MaterialDesignDataGrid}">
+                                <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+                            </Style>
+                            <Style TargetType="DataGridCell" BasedOn="{StaticResource MaterialDesignDataGridCell}">
+                                <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+
+                                <Setter Property="Foreground" Value="#FF9900"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#263859"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                            <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Height" Value="44"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Style.Triggers>
+
+                                </Style.Triggers>
+                            </Style>
+                            <!--Scrolbar uchun style-->
+                            <Style TargetType="ScrollBar">
+                                <Setter Property="Background" Value="#263859"/>
+                            </Style>
+                        </DataGrid.Resources>
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="KOD" Binding="{Binding product_id}" Width="100"/>
+                            <DataGridTextColumn Header="MAXSULOT" Binding="{Binding name}" Width="300*"/>
+                            <DataGridTextColumn Header="O'LCHOV" Binding="{Binding measurement}" Width="100"/>
+                            <DataGridTextColumn Header="ZAVOD" Binding="{Binding preparer}" Width="200*"/>
+                            <DataGridTextColumn Header="MIQDOR" Binding="{Binding quantity}" Width="150"/>
+                            <DataGridTextColumn Header="NARXI" Binding="{Binding price}" Width="150*"/>
+                            <DataGridTextColumn Header="VAL. O'LCHOV" Binding="{Binding val_ul}" Width="130"/>
+                            <DataGridTextColumn Header="SHTRIX KOD" Binding="{Binding barcode}" Width="200*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
+                <Grid x:Name="GridPageUrta" Grid.Row="1" Width="200" Visibility="Collapsed">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" x:Name="btnPreviusUrta"
+                            IsEnabled="False" 
+                            Opacity="0.5"
+                            Click="btnPreviusKam_Click">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"/>
+                        </StackPanel>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Width" Value="50"/>
+                                <Setter Property="Height" Value="50"/>
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="BorderBrush" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border
+                                                CornerRadius="50"
+                                                Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderThickness" Value="2"/>
+                                        <Setter Property="BorderBrush" Value="#455A64"/>
+                                        <Setter Property="Background" Value="#455A64"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Grid.Column="1" x:Name="btnNextUrta"
+                            Click="btnNextKam_Click">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ArrowRight" Width="25" Height="25"/>
+                        </StackPanel>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Width" Value="50"/>
+                                <Setter Property="Height" Value="50"/>
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="BorderBrush" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border
+                                                CornerRadius="50"
+                                                Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderThickness" Value="2"/>
+                                        <Setter Property="BorderBrush" Value="#455A64"/>
+                                        <Setter Property="Background" Value="#455A64"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Grid>
+            </Grid>
+
+            <!-- Meyor -->
+            <Grid x:Name="StackMeyor" Margin="0 0 0 10" Grid.Row="1" HorizontalAlignment="Stretch" Width="Auto" Visibility="Collapsed">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ScrollViewer x:Name="scrollVieer" VerticalScrollBarVisibility="Disabled">
+                    <ScrollViewer.Style>
+                        <Style TargetType="ScrollViewer">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding HasItems, ElementName=dataGrid}" Value="False">
+                                    <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ScrollViewer.Style>
+                    <DataGrid x:Name="dataGridProductMeyor"
+                    HorizontalScrollBarVisibility="Auto" 
+                    Width="Auto"
+                    HorizontalGridLinesBrush="#263859"
+                    AutoGenerateColumns="False"
+                    GridLinesVisibility="Horizontal"
+                    CanUserAddRows="False"
+                    CanUserDeleteRows="False"
+                    IsReadOnly="True"
+                    CanUserReorderColumns="False"
+                    CanUserResizeColumns="False"
+                    CanUserResizeRows="False"
+                    Background="#FF17223B"
+                    BorderThickness="1" SelectionMode="Single" SelectionUnit="FullRow"
+                    Margin="25 0 20 10"
+                          
+                          >
+                        <DataGrid.Resources>
+                            <Style TargetType="DataGrid" BasedOn="{StaticResource MaterialDesignDataGrid}">
+                                <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+                            </Style>
+                            <Style TargetType="DataGridCell" BasedOn="{StaticResource MaterialDesignDataGridCell}">
+                                <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+
+                                <Setter Property="Foreground" Value="#7EBC59"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#263859"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                            <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Height" Value="44"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Style.Triggers>
+
+                                </Style.Triggers>
+                            </Style>
+                            <!--Scrolbar uchun style-->
+                            <Style TargetType="ScrollBar">
+                                <Setter Property="Background" Value="#263859"/>
+                            </Style>
+                        </DataGrid.Resources>
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="KOD" Binding="{Binding product_id}" Width="100"/>
+                            <DataGridTextColumn Header="MAXSULOT" Binding="{Binding name}" Width="300*"/>
+                            <DataGridTextColumn Header="O'LCHOV" Binding="{Binding measurement}" Width="100"/>
+                            <DataGridTextColumn Header="ZAVOD" Binding="{Binding preparer}" Width="200*"/>
+                            <DataGridTextColumn Header="MIQDOR" Binding="{Binding quantity}" Width="150"/>
+                            <DataGridTextColumn Header="NARXI" Binding="{Binding price}" Width="150*"/>
+                            <DataGridTextColumn Header="VAL. O'LCHOV" Binding="{Binding val_ul}" Width="130"/>
+                            <DataGridTextColumn Header="SHTRIX KOD" Binding="{Binding barcode}" Width="200*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </ScrollViewer>
+                <Grid x:Name="GridPageMeyor" Grid.Row="1" Width="200" Visibility="Collapsed">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" x:Name="btnPreviusMeyor"
+                            IsEnabled="False" 
+                            Opacity="0.5"
+                            Click="btnPreviusKam_Click">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ArrowLeft" Width="25" Height="25"/>
+                        </StackPanel>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Width" Value="50"/>
+                                <Setter Property="Height" Value="50"/>
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="BorderBrush" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border
+                                                CornerRadius="50"
+                                                Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderThickness" Value="2"/>
+                                        <Setter Property="BorderBrush" Value="#455A64"/>
+                                        <Setter Property="Background" Value="#455A64"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button Grid.Column="1" x:Name="btnNextMeyor"
+                            Click="btnNextKam_Click">
+                        <StackPanel>
+                            <materialDesign:PackIcon Kind="ArrowRight" Width="25" Height="25"/>
+                        </StackPanel>
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Width" Value="50"/>
+                                <Setter Property="Height" Value="50"/>
+                                <Setter Property="Background" Value="#263859"/>
+                                <Setter Property="BorderBrush" Value="#263859"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Button">
+                                            <Border
+                                                CornerRadius="50"
+                                                Background="{TemplateBinding Background}"
+                                                BorderBrush="{TemplateBinding BorderBrush}">
+                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="BorderThickness" Value="2"/>
+                                        <Setter Property="BorderBrush" Value="#455A64"/>
+                                        <Setter Property="Background" Value="#455A64"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                </Grid>
+            </Grid>
+
+            <!-- 3  - qator -->
+            <StackPanel Grid.Row="2">
+                <Button x:Name="BtnAsosiy" Click="BtnAsosiy_Click" >
+                    <StackPanel Orientation="Horizontal" Width="150">
+                        <Image Source="Resources/Asosiy.png" Width="24" Height="24" Margin="13 0 0 0"/>
+                        <TextBlock Text="Asosiy" Margin="25 0 0 0"/>
+                    </StackPanel>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Width" Value="155"/>
+                            <Setter Property="Height" Value="60"/>
+                            <Setter Property="FontFamily" Value="Segoe UI"/>
+                            <Setter Property="FontSize" Value="18"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="#263859"/>
+                            <Setter Property="BorderBrush" Value="#263859"/>
+                            <Setter Property="HorizontalAlignment" Value="Left"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Margin" Value="20 0 0 30"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border
+                                            CornerRadius="3"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            Background="{TemplateBinding Background}">
+                                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                                            </ContentPresenter>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="BorderThickness" Value="2"/>
+                                    <Setter Property="BorderBrush" Value="#455A64"/>
+                                    <Setter Property="Background" Value="#455A64"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

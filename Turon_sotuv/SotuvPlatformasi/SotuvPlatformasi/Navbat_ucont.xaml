@@ -1,0 +1,223 @@
+﻿<UserControl x:Class="SotuvPlatformasi.Navbat_ucont"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SotuvPlatformasi"
+             mc:Ignorable="d" 
+             d:DesignHeight="724" d:DesignWidth="1240" Loaded="UserControl_Loaded">
+    <Grid Background="#FF17223B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="25 0 25 0">
+                <TextBox x:Name="txtSearch" TextChanged="txtSearch_TextChanged" Style="{StaticResource TextBoxes}" Height="50" Margin="20 20 0 0"/>
+
+                <Grid Background="#17223B" Height="20" Width="130" Margin="50 -30 0 0" HorizontalAlignment="Left">
+                    <TextBlock Text="Mijoz fish..." Foreground="#6B778C" FontFamily="Segoe UI" FontSize="16px" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                </Grid>
+                <materialDesign:PackIcon Foreground="#6B778C" Kind="Search" Margin="0 20 20 0" Width="25" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0 30 0 10" HorizontalAlignment="Stretch" Width="Auto">
+            <ScrollViewer x:Name="scrollViewer" VerticalScrollBarVisibility="Disabled">
+                <ScrollViewer.Style>
+                    <Style TargetType="ScrollViewer">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding HasItems, ElementName=dataGrid}" Value="False">
+                                <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ScrollViewer.Style>
+                <DataGrid x:Name="dataGridNavbat"
+                    HorizontalScrollBarVisibility="Auto" 
+                    Width="Auto"
+                    HorizontalGridLinesBrush="#263859"
+                    AutoGenerateColumns="False"
+                    GridLinesVisibility="Horizontal"
+                    CanUserAddRows="False"
+                    CanUserDeleteRows="False"
+                    IsReadOnly="True"
+                    CanUserReorderColumns="False"
+                    CanUserResizeColumns="False"
+                    CanUserResizeRows="False"
+                    Background="#FF17223B"
+                    BorderThickness="1" SelectionMode="Single" SelectionUnit="FullRow"
+                    Margin="20 0 20 10">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGrid" BasedOn="{StaticResource MaterialDesignDataGrid}">
+                            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+                        </Style>
+                        <Style TargetType="DataGridCell" BasedOn="{StaticResource MaterialDesignDataGridCell}">
+                            <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+                            <Setter Property="Background" Value="#FF17223B"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderThickness" Value="0"/>
+                            <Setter Property="BorderBrush" Value="#263859"/>
+                            <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsSelected" Value="True">
+                                    <Setter Property="Background" Value="#263859"/>
+                                </Trigger>
+
+                            </Style.Triggers>
+                        </Style>
+                        <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource MaterialDesignDataGridColumnHeader}">
+                            <Setter Property="Background" Value="#263859"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Height" Value="44"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                            <Setter Property="VerticalContentAlignment" Value="Center"/>
+                            <Style.Triggers>
+
+                            </Style.Triggers>
+                        </Style>
+                        <!--Scrolbar uchun style-->
+                        <Style TargetType="ScrollBar">
+                            <Setter Property="Background" Value="#263859"/>
+                        </Style>
+                    </DataGrid.Resources>
+
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="MIJOZ" Binding="{Binding mijoz_fish}" Width="200*"/>
+                        <DataGridTextColumn Header="SO'M" Binding="{Binding total_som}" Width="120"/>
+                        <DataGridTextColumn Header="DOLLAR" Binding="{Binding total_dollar}" Width="120"/>
+                        <DataGridTextColumn Header="KURS" Binding="{Binding kurs}" Width="120"/>
+                        <DataGridTextColumn Header="SANA" Binding="{Binding date}" Width="200*"/>
+                        <DataGridTextColumn Header="SOTUVCHI" Binding="{Binding first_name}" Width="200*"/>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.Header>
+                                <TextBlock Text="SOTUVGA" Width="150" TextAlignment="Center"/>
+                            </DataGridTemplateColumn.Header>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="btnKorzinkaOlish" Click="btnKorzinkaOlish_Click" Content="+">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Width" Value="120"/>
+                                                <Setter Property="Height" Value="30"/>
+                                                <Setter Property="Background" Value="#005792"/>
+                                                <Setter Property="Foreground" Value="White"/>
+                                                <Setter Property="FontFamily" Value="Segoe UI"/>
+                                                <Setter Property="FontSize" Value="18px"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                            <Border
+                                                                    CornerRadius="3"
+                                                                    Background="{TemplateBinding Background}"
+                                                                    BorderBrush="{TemplateBinding BorderBrush}">
+                                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                                                                </ContentPresenter>
+                                                            </Border>
+
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="#0057F4"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.Header>
+                                <TextBlock Text="BEKOR" Width="150" TextAlignment="Center"/>
+                            </DataGridTemplateColumn.Header>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="btnBekorQilish" Click="btnBekorQilish_Click" Content="x">
+                                        <Button.Style>
+                                            <Style TargetType="{x:Type Button}">
+                                                <Setter Property="Width" Value="120"/>
+                                                <Setter Property="Height" Value="30"/>
+                                                <Setter Property="Background" Value="#F75940"/>
+                                                <Setter Property="Foreground" Value="White"/>
+                                                <Setter Property="FontFamily" Value="Segoe UI"/>
+                                                <Setter Property="FontSize" Value="16px"/>
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="{x:Type Button}">
+                                                            <Border
+                                                                    CornerRadius="3"
+                                                                    Background="{TemplateBinding Background}"
+                                                                    BorderBrush="{TemplateBinding BorderBrush}">
+                                                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                                                                </ContentPresenter>
+                                                            </Border>
+
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="#FF7140"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                
+                </DataGrid>
+            </ScrollViewer>
+        </Grid>
+        <StackPanel Grid.Row="2">
+            <Button x:Name="BtnAsosiy" Click="BtnAsosiy_Click">
+                <StackPanel Orientation="Horizontal" Width="150">
+                    <Image Source="Resources/Asosiy.png" Width="24" Height="24" Margin="13 0 0 0"/>
+                    <TextBlock Text="Asosiy" Margin="25 0 0 0"/>
+                </StackPanel>
+                <Button.Style>
+                    <Style TargetType="{x:Type Button}">
+                        <Setter Property="Width" Value="155"/>
+                        <Setter Property="Height" Value="60"/>
+                        <Setter Property="FontFamily" Value="Segoe UI"/>
+                        <Setter Property="FontSize" Value="18"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Background" Value="#263859"/>
+                        <Setter Property="BorderBrush" Value="#263859"/>
+                        <Setter Property="HorizontalAlignment" Value="Left"/>
+                        <Setter Property="BorderThickness" Value="1"/>
+                        <Setter Property="Margin" Value="20 0 0 30"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border
+                                            CornerRadius="3"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            Background="{TemplateBinding Background}">
+                                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                                        </ContentPresenter>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderThickness" Value="2"/>
+                                <Setter Property="BorderBrush" Value="#455A64"/>
+                                <Setter Property="Background" Value="#455A64"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

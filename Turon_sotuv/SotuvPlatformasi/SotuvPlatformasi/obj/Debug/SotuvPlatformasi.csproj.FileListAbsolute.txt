@@ -1,0 +1,740 @@
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.cache
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.lref
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe.config
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.pdb
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.g.resources
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.Properties.Resources.resources
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.GenerateResource.cache
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CoreCompileInputs.cache
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.exe
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.pdb
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ResourceDictionaries\MenuButton.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CopyComplete
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csprojAssemblyReference.cache
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab.baml
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Faktura.g.cs
+C:\Users\Sardorbek\source\repos\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Faktura.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe.config
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.pdb
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.pdb
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ResourceDictionaries\MenuButton.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.cache
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.lref
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.g.resources
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.Properties.Resources.resources
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.GenerateResource.cache
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CoreCompileInputs.cache
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CopyComplete
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.exe
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.pdb
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Zstandard.Net.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BouncyCastle.Crypto.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Ubiety.Dns.Core.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.pdb
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BarcodeStandard.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Drawing.Common.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.g.cs
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.baml
+D:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csprojAssemblyReference.cache
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe.config
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.pdb
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BarcodeStandard.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BouncyCastle.Crypto.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Drawing.Common.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Ubiety.Dns.Core.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Zstandard.Net.dll
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.pdb
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.pdb
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.xml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ResourceDictionaries\MenuButton.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.cache
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.lref
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.baml
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.g.resources
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.Properties.Resources.resources
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.GenerateResource.cache
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CoreCompileInputs.cache
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CopyComplete
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.exe
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.pdb
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csprojAssemblyReference.cache
+E:\Projects\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.BasketForm.resources
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe.config
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.pdb
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BarcodeStandard.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BouncyCastle.Crypto.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Drawing.Common.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Ubiety.Dns.Core.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Zstandard.Net.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.pdb
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.pdb
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ResourceDictionaries\MenuButton.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.cache
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.lref
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.g.resources
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.BasketForm.resources
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.Properties.Resources.resources
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.GenerateResource.cache
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CoreCompileInputs.cache
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CopyComplete
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.exe
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.pdb
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChooseClient.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChooseClient.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NewClient.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NewClient.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorReport.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorReport.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NavbatClient.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NavbatClient.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChangePrice_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\EditPrice.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChangePrice_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\EditPrice.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\PriceReport_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\PriceReport_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliver_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliver_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Deliver.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Deliver.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnBasket.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnBasket.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliverReport_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliverReport_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorPayHistory_ucont.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorPayHistory_ucont.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.Shared.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Dapper.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\stdole.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Dapper.xml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\AxShockwaveFlashObjects.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\ShockwaveFlashObjects.dll
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.frmPrint.resources
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.AssemblyReference.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe.config
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BarcodeStandard.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Dapper.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Drawing.Common.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Zstandard.Net.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\stdole.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Dapper.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ResourceDictionaries\MenuButton.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChangePrice_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChooseClient.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorPayHistory_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorReport.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Deliver.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\EditPrice.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NavbatClient.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NewClient.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\PriceReport_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnBasket.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliverReport_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliver_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.lref
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChangePrice_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChooseClient.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorPayHistory_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorReport.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Deliver.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\EditPrice.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NavbatClient.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NewClient.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\PriceReport_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnBasket.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliverReport_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliver_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.g.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.BasketForm.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.frmPrint.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.Properties.Resources.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.GenerateResource.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CoreCompileInputs.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CopyComplete
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.exe
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.AssemblyReference.cache
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.baml
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.g.cs
+E:\Projects\Bir necha valyutada savdo\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Santexnika_Sotuv\SantexnikaSotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe.config
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.exe
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\SotuvPlatformasi.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BarcodeStandard.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Dapper.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Drawing.Common.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Zstandard.Net.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\stdole.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Dapper.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Google.Protobuf.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Buffers.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Memory.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Text.Json.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\System.ValueTuple.xml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ResourceDictionaries\MenuButton.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChangePrice_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChooseClient.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorPayHistory_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorReport.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Deliver.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\EditPrice.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NavbatClient.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NewClient.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\PriceReport_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnBasket.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliverReport_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliver_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi_MarkupCompile.lref
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\App.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Asosiy_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChangePrice_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Check_sozlamalar.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ChooseClient.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorPayHistory_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\DebtorReport.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Debt_tulov.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Deliver.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\EditPrice.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\FakturaHisob_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_all.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\faktura_kurish_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\fakt_qab_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Filiallar_bazasi_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Hisobot_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\hodim_add.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Kirish_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Korzinka.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\LoadingWindow.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\MainWindow.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NavbatClient.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Navbat_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\NewClient.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\PriceReport_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Qarzdorlar_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\qaytuv_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnBasket.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliverReport_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\ReturnDeliver_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sotuv_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Sozlamalar_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Staff_list.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tovar_qoldiq_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\tulov_click.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\Tul_qab_ucont.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YFakturaAdd.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\YuqlamaFaktura.baml
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.g.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.BasketForm.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.frmPrint.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.Properties.Resources.resources
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.GenerateResource.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CoreCompileInputs.cache
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.csproj.CopyComplete
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.exe
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\obj\Debug\SotuvPlatformasi.pdb
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Oysha Algorithm\Documents\C# Projects\Turon\Turon_sotuv\SotuvPlatformasi\SotuvPlatformasi\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
