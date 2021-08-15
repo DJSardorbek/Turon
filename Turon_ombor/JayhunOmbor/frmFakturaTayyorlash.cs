@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,8 @@ namespace JayhunOmbor
         {
             InitializeComponent();
         }
+
+        DBAccess objDbAccess = new DBAccess();
         public static bool Faktura = false;
         public static bool faktura_edit = false;
         public static string faktura_id = "";
@@ -55,7 +58,7 @@ namespace JayhunOmbor
             dbgridProduct.Columns.Cast<DataGridViewColumn>().ToList().ForEach(f => f.SortMode = DataGridViewColumnSortMode.NotSortable);
             faktura_id = Form1.faktura_id;
             faktura_edit = true;
-            
+
             if (Form1.filial == false)
             {
                 try
@@ -97,7 +100,7 @@ namespace JayhunOmbor
                 comboFilial.DataSource = tbFilial;
                 comboFilial.DisplayMember = "name";
             }
-            if(faktura_id !="")
+            if (faktura_id != "")
             {
                 FakturaShow(faktura_id);
                 btnCreate.Enabled = false;
@@ -174,7 +177,7 @@ namespace JayhunOmbor
                     tbPr.Dispose();
                     dv = true;
 
-                    if(tbPr.Rows.Count == 0)
+                    if (tbPr.Rows.Count == 0)
                     {
                         rows = Form1.tbProduct.Select("Махсулот_Номи like '%" + txtSearch.Text + "%'");
                         tbPr = new DataTable();
@@ -283,7 +286,7 @@ namespace JayhunOmbor
         public static async Task<string> GetObject(string restCallURL)
         {
             HttpClient apiCallClient = new HttpClient();
-            string authToken = "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc";
+            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
@@ -298,7 +301,7 @@ namespace JayhunOmbor
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc");
+                client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
                 try
                 {
                     HttpResponseMessage result = await client.PostAsync(u, c);
@@ -324,7 +327,7 @@ namespace JayhunOmbor
 
         public void iconButton3_Click(object sender, EventArgs e)
         {
-            if(f5)
+            if (f5)
             {
                 MessageBox.Show("Фактура яратилмаган!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -432,7 +435,7 @@ namespace JayhunOmbor
             if (cell == false)
             {
                 cell = true;
-                if(dv1 == false)
+                if (dv1 == false)
                 {
                     if (tbFakturaSave.Rows.Count > 0)
                     {
@@ -476,7 +479,7 @@ namespace JayhunOmbor
                         }
                     }
                 }
-                
+
                 else
                 {
                     if (tbFkSave.Rows.Count > 0)
@@ -556,6 +559,36 @@ namespace JayhunOmbor
                 t.Wait();
                 if (t.Result != "Error!" && t.Result.Length != 0)
                 {
+                    try
+                    {
+                        //Now we update local db
+                        int count = tbFaktura.Rows.Count;
+                        string queryToProduct = "";
+                        DataTable tbProduct = new DataTable();
+                        double pr_quan = 0, fk_quan = 0;
+                        string str_pr_quan = "";
+                        MySqlCommand cmd;
+                        for (int i = 0; i < count; i++)
+                        {
+                            queryToProduct = "SELECT quantity FROM product where product_id='" + tbFaktura.Rows[i]["product"] + "'";
+                            tbProduct.Clear();
+                            objDbAccess.readDatathroughAdapter(queryToProduct, tbProduct);
+                            str_pr_quan = tbProduct.Rows[0]["quantity"].ToString();
+                            pr_quan = double.Parse(str_pr_quan);
+                            fk_quan = double.Parse(tbFaktura.Rows[i]["Микдори"].ToString());
+                            pr_quan -= fk_quan;
+                            str_pr_quan = DoubleToStr(pr_quan.ToString());
+                            cmd = new MySqlCommand("UPDATE product SET quantity='" + str_pr_quan + "' WHERE product_id='" + tbFaktura.Rows[i]["product"] + "'");
+                            objDbAccess.executeQuery(cmd);
+                            cmd.Dispose();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                        return;
+                    }
+
                     Form1.faktura = false;
                     tabControl1_Click(sender, e);
                     MessageBox.Show("Фактура муваффакиятли жўнатилди!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -572,7 +605,7 @@ namespace JayhunOmbor
             {
                 MessageBox.Show(ex.Message, "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
         }
         public static bool send = false;
         public void btnSend_Click(object sender, EventArgs e)
@@ -592,6 +625,36 @@ namespace JayhunOmbor
                         t.Wait();
                         if (t.Result != "Error!" && t.Result.Length != 0)
                         {
+                            try
+                            {
+                                //Now we update local db
+                                int count = tbFaktura.Rows.Count;
+                                string queryToProduct = "";
+                                DataTable tbProduct = new DataTable();
+                                double pr_quan = 0, fk_quan = 0;
+                                string str_pr_quan = "";
+                                MySqlCommand cmd;
+                                for (int i = 0; i < count; i++)
+                                {
+                                    queryToProduct = "SELECT quantity FROM product where product_id='" + tbFaktura.Rows[i]["product"] + "'";
+                                    tbProduct.Clear();
+                                    objDbAccess.readDatathroughAdapter(queryToProduct, tbProduct);
+                                    str_pr_quan = tbProduct.Rows[0]["quantity"].ToString();
+                                    pr_quan = double.Parse(str_pr_quan);
+                                    fk_quan = double.Parse(tbFaktura.Rows[i]["Микдори"].ToString());
+                                    pr_quan -= fk_quan;
+                                    str_pr_quan = DoubleToStr(pr_quan.ToString());
+                                    cmd = new MySqlCommand("UPDATE product SET quantity='" + str_pr_quan + "' WHERE product_id='" + tbFaktura.Rows[i]["product"] + "'");
+                                    objDbAccess.executeQuery(cmd);
+                                    cmd.Dispose();
+                                }
+                            }
+                            catch(Exception ex)
+                            {
+                                MessageBox.Show(ex.Message);
+                                return;
+                            }
+
                             Form1.faktura = false; // saqlanganalar uchun
                             tbFaktura.Clear();
                             btnCreate.Enabled = true;
@@ -657,7 +720,7 @@ namespace JayhunOmbor
         public static CurrencyManager managerFkSave;
         private async void metroSetTextBox2_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         public string DoubleToStr(string s)
@@ -723,7 +786,7 @@ namespace JayhunOmbor
                 MessageBox.Show("Фактура бeкор килинди!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -752,7 +815,7 @@ namespace JayhunOmbor
             }
             else
             {
-               
+
                 try
                 {
                     string url = "http://turonsavdo.backoffice.uz/api/faktura/otkaz/?fak=" + tbFkSave.Rows[managerFkSave.Position]["Фактура_ид"].ToString();
@@ -768,7 +831,7 @@ namespace JayhunOmbor
                     MessageBox.Show(ex.Message, "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-               
+
             }
         }
 
@@ -781,7 +844,7 @@ namespace JayhunOmbor
             else
             {
                 dbgridProduct.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
-            } 
+            }
         }
 
         public static bool fakturaItem = false;
@@ -812,7 +875,7 @@ namespace JayhunOmbor
 
         private async void metroSetTextBox2_KeyPressed(object sender, KeyPressEventArgs e)
         {
-            if(e.KeyChar == 13)
+            if (e.KeyChar == 13)
             {
                 if (tbFakturaSave.Rows.Count > 0 && txtSearchFil.Text != "")
                 {
@@ -1103,7 +1166,7 @@ namespace JayhunOmbor
                 tabControl = true;
                 if (tabControl1.SelectedIndex == 1)
                 {
-                    
+
                     if (Form1.filial == false)
                     {
                         try
@@ -1237,10 +1300,10 @@ namespace JayhunOmbor
                             dbgridFakturaItemSave.Columns.Cast<DataGridViewColumn>().ToList().ForEach(f => f.SortMode = DataGridViewColumnSortMode.NotSortable);
                         }
                     }
-                    
+
                 }
                 tabControl = false;
-                
+
             }
         }
 
@@ -1441,7 +1504,7 @@ namespace JayhunOmbor
             }
         }
 
-        public static string edit_som = "", edit_dollar="", edit_quantity = "";
+        public static string edit_som = "", edit_dollar = "", edit_quantity = "";
         public static bool edit = false;
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -1454,7 +1517,7 @@ namespace JayhunOmbor
             editFaktura.som = tbFaktura.Rows[managerFaktura.Position]["Сум"].ToString();
             editFaktura.dollar = tbFaktura.Rows[managerFaktura.Position]["Доллар"].ToString();
             editFaktura.quantity = tbFaktura.Rows[managerFaktura.Position]["Микдори"].ToString();
-            if(editFaktura.ShowDialog() == DialogResult.OK)
+            if (editFaktura.ShowDialog() == DialogResult.OK)
             {
                 EditFaktura(tbFaktura.Rows[managerFaktura.Position]["id"].ToString(),
                     tbFaktura.Rows[managerFaktura.Position]["product"].ToString());
@@ -1466,7 +1529,7 @@ namespace JayhunOmbor
 
         private void frmFakturaTayyorlash_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Tab)
+            if (e.KeyCode == Keys.Tab)
             {
                 txtSearch.Focus();
             }
@@ -1476,10 +1539,10 @@ namespace JayhunOmbor
         {
             if (tbFakturaSave.Rows.Count == 0)
             {
-                MessageBox.Show("Fakturani tanlang!","Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Fakturani tanlang!", "Xatolik", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if(frmRecieveProduct.faktura_id!="0")
+            if (frmRecieveProduct.faktura_id != "0")
             {
                 MessageBox.Show("Qabulga ulanish mumkin emas\nQabulga ulangan faktura mavjud!", "Ogohlantirish", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -1487,12 +1550,12 @@ namespace JayhunOmbor
             else if (frmRecieveProduct.faktura_id == "0")
             {
                 frmRecieveProduct.faktura_id = tbFakturaSave.Rows[managerFakturaSave.Position]["Фактура_ид"].ToString();
-                MessageBox.Show("Faktura qabulga muvaffaqiyatli ulandi!\nMaxsulot qabuli bo'limiga o'tish qabulni davom ettirishingiz mumkin!","Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Faktura qabulga muvaffaqiyatli ulandi!\nMaxsulot qabuli bo'limiga o'tish qabulni davom ettirishingiz mumkin!", "Xabar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
         }
 
-        
+
 
         public static bool f5 = true;
         public static bool create = false;
@@ -1553,7 +1616,7 @@ namespace JayhunOmbor
             }
         }
         public static bool fakturaShow = false;
-        public static string faktura = "", product_name = "", som = "", dollar="", quantity = "", product_id = "", id="", preparer="",measurement="";
+        public static string faktura = "", product_name = "", som = "", dollar = "", quantity = "", product_id = "", id = "", preparer = "", measurement = "";
         public async void FakturaShow(string faktura)
         {
             try
@@ -1717,7 +1780,7 @@ namespace JayhunOmbor
                 btnCreate.Enabled = false;
                 comboFilial.Enabled = false;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 fakturaShow = true;

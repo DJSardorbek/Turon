@@ -23,10 +23,12 @@ namespace SotuvPlatformasi
     {
 
         DispatcherTimer timer = new DispatcherTimer();
+        //// Timer for faktura
+        //DispatcherTimer timerFaktura = new DispatcherTimer();
         public MainWindow()
         {
             InitializeComponent();
-            
+
         }
         DataTable tbShopId;
         CurrencyManager managertb;
@@ -38,6 +40,26 @@ namespace SotuvPlatformasi
         public static string footer = "";
         public static bool fakt_qab_click = false;
         DBAccess objDBAccess = new DBAccess();
+
+        public class Result
+        {
+            public int id { get; set; }
+            public string date { get; set; }
+            public double som { get; set; }
+            public double dollar { get; set; }
+            public int status { get; set; }
+            public double difference_som { get; set; }
+            public double difference_dollar { get; set; }
+            public int filial { get; set; }
+        }
+
+        public class FakturaSetQuan
+        {
+            public int count { get; set; }
+            public object next { get; set; }
+            public object previous { get; set; }
+            public IList<Result> results { get; set; }
+        }
 
         /// <summary>
         /// To start sending data to the internet in each 10 secund
@@ -58,11 +80,64 @@ namespace SotuvPlatformasi
                 }
             }
             tbSend.Dispose();
-            
         }
+
+        /// <summary>
+        /// The function to start FakturaTimer
+        /// </summary>
+        //public void startFakturaTimer()
+        //{
+        //    string send = "select * from send";
+        //    DataTable tbSend = new DataTable();
+        //    objDBAccess.readDatathroughAdapter(send, tbSend);
+        //    if (tbSend.Rows.Count > 0)
+        //    {
+        //        string password = tbSend.Rows[0]["password"].ToString();
+        //        if (password == Kirish_ucont.password1)
+        //        {
+        //            timerFaktura.Tick += new EventHandler(StartFakturaSetAsync);
+        //            timerFaktura.Interval = new TimeSpan(0, 5, 0);
+        //            timer.Start();
+        //        }
+        //    }
+
+        //}
+
+        /// <summary>
+        /// The function to update product quantity from sended faktura
+        /// </summary>
+        //public async void StartFakturaSetAsync(object Source, EventArgs e)
+        //{
+        //    string response = await GetObject("http://turonsavdo.backoffice.uz/api/faktura?status=2");
+        //    FakturaSetQuan fakturaSetQuan = JsonConvert.DeserializeObject<FakturaSetQuan>(response);
+        //    if (fakturaSetQuan.count > 0)
+        //    {
+        //        string queryToProduct = "";
+        //        double pr_quan = 0, fk_quan = 0;
+        //        string str_pr_quan = "";
+        //        DataTable tbProduct = new DataTable();
+        //        MySqlCommand cmd;
+        //        foreach (var item in url)
+        //        {
+        //            queryToProduct = $"select quantity from product where barcode={url}";
+        //            tbProduct.Clear();
+        //            objDBAccess.readDatathroughAdapter(queryToProduct, tbProduct);
+        //            str_pr_quan = tbProduct.Rows[0]["quantity"].ToString();
+        //            pr_quan = double.Parse(str_pr_quan);
+        //            fk_quan = Convert.ToDouble(item);
+        //            pr_quan -= fk_quan;
+        //            cmd = new MySqlCommand($"update product set quantity='{pr_quan}' where barcode={url}");
+        //            objDBAccess.executeQuery(cmd);
+        //            cmd.Dispose();
+        //        }
+        //    }
+
+        //}
+
+
         public string DoubleToStr(string s)
         {
-            if(s.IndexOf(',') > -1)
+            if (s.IndexOf(',') > -1)
             {
                 int index = s.IndexOf(',');
                 string first = s.Substring(0, index);
@@ -148,7 +223,7 @@ namespace SotuvPlatformasi
                         naqd_som = DoubleToStr(naqd_som);
 
                         naqd_dollar = tbSoldShop.Rows[i]["currency"].ToString();//
-                        naqd_dollar= DoubleToStr(naqd_dollar);
+                        naqd_dollar = DoubleToStr(naqd_dollar);
 
                         plastik = tbSoldShop.Rows[i]["plastik"].ToString();//
                         plastik = DoubleToStr(plastik);
@@ -156,7 +231,7 @@ namespace SotuvPlatformasi
                         transfer = tbSoldShop.Rows[i]["transfer"].ToString();//
                         transfer = DoubleToStr(transfer);
 
-                        
+
                         skidka_som = tbSoldShop.Rows[i]["difference_som"].ToString();//
                         double Dskidka_som = double.Parse(DoubleToStr(skidka_som), CultureInfo.InvariantCulture);
 
@@ -229,7 +304,7 @@ namespace SotuvPlatformasi
                 {
                     int CountMixShop = tbMixShop.Rows.Count;
                     string naqd_som = "", naqd_dollar = "", plastik = "", transfer = "", skidka_som = "", skidka_dollar = "", saler = ""; //shop jadvali
-                    string fio = "", phone = "", nasiya_som="", nasiya_dollar=""; // debtor jadvali
+                    string fio = "", phone = "", nasiya_som = "", nasiya_dollar = ""; // debtor jadvali
                     string queryCart = ""; DataTable tbCart = new DataTable();
 
                     for (int i = 0; i < CountMixShop; i++)
@@ -266,7 +341,7 @@ namespace SotuvPlatformasi
                         string queryDebtDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbMixShop.Rows[i]["id"] + "'";
                         tbDebtDebtor = new DataTable();
                         objDBAccess.readDatathroughAdapter(queryDebtDebtor, tbDebtDebtor);
-                        
+
                         fio = tbDebtDebtor.Rows[0]["mijoz_fish"].ToString();
                         phone = tbDebtDebtor.Rows[0]["tel_1"].ToString();
 
@@ -429,7 +504,7 @@ namespace SotuvPlatformasi
                 if (tbSendPayHistory.Rows.Count > 0)
                 {
                     int CountPayHistory = tbSendPayHistory.Rows.Count;
-                    string given_som = "", given_dollar=""; //payhistory jadvali
+                    string given_som = "", given_dollar = ""; //payhistory jadvali
                     string fio = "", phone1 = ""; // debtor va debt jadvali
                     for (int i = 0; i < CountPayHistory; i++)
                     {
@@ -448,7 +523,7 @@ namespace SotuvPlatformasi
                         tbPayDebtor.Dispose();
                         Uri u = new Uri("http://turonsavdo.backoffice.uz/api/payhistory/add/");
 
-                        var payload = "{\"filial\": \"" + filial_id + "\",\"som\": \"" + given_som + "\",\"dollar\": \""+given_dollar+"\",\"fio\": \"" + fio + "\",\"phone1\": \"" + phone1 + "\"}";
+                        var payload = "{\"filial\": \"" + filial_id + "\",\"som\": \"" + given_som + "\",\"dollar\": \"" + given_dollar + "\",\"fio\": \"" + fio + "\",\"phone1\": \"" + phone1 + "\"}";
                         //MessageBox.Show(payload);
                         HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
                         var t = Task.Run(() => PostURI(u, content));
@@ -481,15 +556,15 @@ namespace SotuvPlatformasi
                 if (tbSoldRetPro.Rows.Count > 0)
                 {
                     int CountSoldRetPro = tbSoldRetPro.Rows.Count;
-                    string return_quan = "", som = "0",dollar="0", difference = "", barcode = "", val_id=""; // returnproduct jadvali
+                    string return_quan = "", som = "0", dollar = "0", difference = "", barcode = "", val_id = ""; // returnproduct jadvali
                     for (int i = 0; i < CountSoldRetPro; i++)
                     {
                         return_quan = tbSoldRetPro.Rows[i]["return_quantity"].ToString(); //
                         return_quan = DoubleToStr(return_quan);
 
                         val_id = tbSoldRetPro.Rows[i]["val_id"].ToString();
-                        if (val_id == "1") 
-                        { 
+                        if (val_id == "1")
+                        {
                             som = tbSoldRetPro.Rows[i]["summa"].ToString();
                             som = DoubleToStr(som);
                         }
@@ -508,7 +583,7 @@ namespace SotuvPlatformasi
 
                         Uri u = new Uri("http://turonsavdo.backoffice.uz/api/returnproduct/add/");
 
-                        var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \""+dollar+ "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"0\",\"barcode\": \"" + barcode + "\"}";
+                        var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \"" + dollar + "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"0\",\"barcode\": \"" + barcode + "\"}";
                         //MessageBox.Show(payload);
                         HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
                         var t = Task.Run(() => PostURI(u, content));
@@ -570,15 +645,15 @@ namespace SotuvPlatformasi
                         string queryDebtRetDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbDebtRetPro.Rows[i]["shop_id"] + "'";
                         tbDebtRetDebtor = new DataTable();
                         objDBAccess.readDatathroughAdapter(queryDebtRetDebtor, tbDebtRetDebtor);
-                        
+
                         fio = tbDebtRetDebtor.Rows[0]["mijoz_fish"].ToString();
                         phone1 = tbDebtRetDebtor.Rows[0]["tel_1"].ToString();
                         tbDebtRetDebtor.Clear();
                         tbDebtRetDebtor.Dispose();
-                        
+
                         Uri u = new Uri("http://turonsavdo.backoffice.uz/api/returnproduct/add/");
 
-                        var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \"" + dollar + "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"1\",\"barcode\": \"" + barcode + "\",\"fio\": \""+fio+"\",\"phone1\": \""+phone1+"\"}";
+                        var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \"" + dollar + "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"1\",\"barcode\": \"" + barcode + "\",\"fio\": \"" + fio + "\",\"phone1\": \"" + phone1 + "\"}";
                         HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
                         var t = Task.Run(() => PostURI(u, content));
                         t.Wait();
@@ -633,7 +708,7 @@ namespace SotuvPlatformasi
                 }
 
                 //Qaytuv oynasi
-                if(e.Key == Key.F3)
+                if (e.Key == Key.F3)
                 {
                     TabMenu.SelectedIndex = 13;
                 }
@@ -741,7 +816,7 @@ namespace SotuvPlatformasi
             Sotuv_ucont.shop = false;
         }
         */
-        
+
 
         /// <summary>
         /// The form Loaded
@@ -807,7 +882,7 @@ namespace SotuvPlatformasi
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc");
+                client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
                 try
                 {
                     HttpResponseMessage result = await client.PostAsync(u, c);
@@ -830,11 +905,11 @@ namespace SotuvPlatformasi
 
 
         public static MySqlCommand cmdSendShop, cmdSendPayHistory, cmdSendReturnProduct, cmdChangeDebtor;
-        
+
         public static async Task<string> GetObject(string restCallURL)
         {
             HttpClient apiCallClient = new HttpClient();
-            string authToken = "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc";
+            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
@@ -860,12 +935,12 @@ namespace SotuvPlatformasi
 
         private void Window_PreviewKeyDown(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            
+
         }
 
         private void Window_KeyUp(object sender, System.Windows.Input.KeyEventArgs e)
         {
-            
+
         }
 
         public static DataTable tbDebtShop, tbDebtDebtor, tbMixShop, tbPayDebtor;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
@@ -8,6 +9,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace JayhunOmbor
@@ -29,7 +31,7 @@ namespace JayhunOmbor
         {
             HttpClient apiCallClient = new HttpClient();
 
-            string authToken = "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc";
+            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
@@ -39,12 +41,56 @@ namespace JayhunOmbor
             return requestresponse;
         }
 
+        public class Filial
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+            public string address { get; set; }
+            public double qarz_som { get; set; }
+            public double qarz_dol { get; set; }
+            public double savdo_puli_som { get; set; }
+            public double savdo_puli_dol { get; set; }
+        }
+
+        public class Product
+        {
+            public int id { get; set; }
+            public Filial filial { get; set; }
+            public string name { get; set; }
+            public string preparer { get; set; }
+            public double som { get; set; }
+            public double sotish_som { get; set; }
+            public double dollar { get; set; }
+            public double sotish_dollar { get; set; }
+            public double kurs { get; set; }
+            public string barcode { get; set; }
+            public string measurement { get; set; }
+            public double min_count { get; set; }
+            public double quantity { get; set; }
+            public int group { get; set; }
+        }
+
+        public class RecieveItem
+        {
+            public int id { get; set; }
+            public int recieve { get; set; }
+            public Product product { get; set; }
+            public double som { get; set; }
+            public double sotish_som { get; set; }
+            public double dollar { get; set; }
+            public double sotish_dollar { get; set; }
+            public double kurs { get; set; }
+            public double quantity { get; set; }
+        }
+
+
+
         static async Task<string> PostURI(Uri u, HttpContent c)
         {
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc");
+                client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
                 try
                 {
                     HttpResponseMessage result = await client.PostAsync(u, c);
@@ -197,23 +243,22 @@ namespace JayhunOmbor
 
                     string url = "http://turonsavdo.backoffice.uz/api/recieveitem/rv1/?rec=" + recieve_id; // recieveitem ni olish uchun
                     string RecieveItemContent = await GetObject(url);
-                    JArray arrayRecieveItem = JArray.Parse(RecieveItemContent);
+                    List<RecieveItem> arrayRecieveItem = JsonConvert.DeserializeObject<List<RecieveItem>>(RecieveItemContent);
                     if (arrayRecieveItem != null)
                     {
                         foreach (var RecieveItem in arrayRecieveItem)
                         {
                             DataRow rowRecieveItem = tbRecieveItem.NewRow();
-                            rowRecieveItem["Кабул_ид"] = RecieveItem["recieve"];
-                            rowRecieveItem["Сўм"] = RecieveItem["som"];
-                            rowRecieveItem["Сотиш_сўм"] = RecieveItem["sotish_som"];
-                            rowRecieveItem["Доллар"] = RecieveItem["dollar"];
-                            rowRecieveItem["Сотиш_доллар"] = RecieveItem["sotish_dollar"];
-                            rowRecieveItem["Курс"] = RecieveItem["kurs"];
-                            rowRecieveItem["Микдори"] = RecieveItem["quantity"];
-                            DataRow[] rows = Form1.tbProduct.Select("Махсулот_ид ='" + RecieveItem["product"].ToString() + "'");
-                            rowRecieveItem["Махсулот"] = rows[0]["Махсулот_Номи"];
-                            rowRecieveItem["id"] = RecieveItem["id"];
-                            rowRecieveItem["product"] = RecieveItem["product"];
+                            rowRecieveItem["Кабул_ид"] = RecieveItem.recieve;
+                            rowRecieveItem["Сўм"] = RecieveItem.som;
+                            rowRecieveItem["Сотиш_сўм"] = RecieveItem.sotish_som;
+                            rowRecieveItem["Доллар"] = RecieveItem.dollar;
+                            rowRecieveItem["Сотиш_доллар"] = RecieveItem.sotish_dollar;
+                            rowRecieveItem["Курс"] = RecieveItem.kurs;
+                            rowRecieveItem["Микдори"] = RecieveItem.quantity;
+                            rowRecieveItem["Махсулот"] = RecieveItem.product.name;
+                            rowRecieveItem["id"] = RecieveItem.id;
+                            rowRecieveItem["product"] = RecieveItem.product.id;
                             tbRecieveItem.Rows.Add(rowRecieveItem);
                         }
                     }
@@ -379,7 +424,7 @@ namespace JayhunOmbor
         {
             HttpClient apiCallClient = new HttpClient();
             String restCallURL = "http://turonsavdo.backoffice.uz/api/product/";
-            string authToken = "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc";
+            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
@@ -400,7 +445,7 @@ namespace JayhunOmbor
                 using(HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    string authToken = "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc";
+                    string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
                     client.DefaultRequestHeaders.Add("Authorization", authToken);
                     var payload = "{\"status\": \"1\"}";
                     string apiUrl = "http://turonsavdo.backoffice.uz/api/recieve/" + recieve_id + "/";
@@ -713,7 +758,7 @@ namespace JayhunOmbor
                 using (var client = new HttpClient())
                 {
                     client.BaseAddress = new Uri("http://turonsavdo.backoffice.uz/");
-                    client.DefaultRequestHeaders.Add("Authorization", "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc");
+                    client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
                     string url = "api/recieve/" + recieve_id + "/";
                     var response = client.DeleteAsync(url).Result;
                     if (response.IsSuccessStatusCode)
@@ -1042,7 +1087,6 @@ namespace JayhunOmbor
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message, "Shu yer 2");
-                    MessageBox.Show("Интeрнeт билан богланишни тeкширинг!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     lblStatus.Visible = false;
                     lblQayta.Visible = true;
                     showRecieve = true;
@@ -1050,7 +1094,7 @@ namespace JayhunOmbor
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Интeрнeт билан богланишни тeкширинг!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Exception" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
                 lblStatus.Visible = false;
                 lblQayta.Visible = true;
                 showRecieve = true;

@@ -144,6 +144,7 @@ namespace SotuvPlatformasi
                 tbPassword.Dispose();
                 txtPassword.Clear();
                 main.startTimer();
+                //main.startFakturaTimer();
 
                 string queryFilial_id = "select * from filial";
                 MainWindow.tbFilial_id = new DataTable();

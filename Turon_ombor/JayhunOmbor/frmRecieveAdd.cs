@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Net.Http;
 using System.Text;
@@ -19,6 +20,49 @@ namespace JayhunOmbor
         public string som = "", dollar = "", kurs = "";
         public string name = "";
         public string faktura_id = "0", group="", barcode="";
+
+        public class Filial
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+            public string address { get; set; }
+            public double qarz_som { get; set; }
+            public double qarz_dol { get; set; }
+            public double savdo_puli_som { get; set; }
+            public double savdo_puli_dol { get; set; }
+        }
+
+        public class Product
+        {
+            public int id { get; set; }
+            public Filial filial { get; set; }
+            public string name { get; set; }
+            public string preparer { get; set; }
+            public double som { get; set; }
+            public double sotish_som { get; set; }
+            public double dollar { get; set; }
+            public double sotish_dollar { get; set; }
+            public double kurs { get; set; }
+            public string barcode { get; set; }
+            public string measurement { get; set; }
+            public double min_count { get; set; }
+            public double quantity { get; set; }
+            public int group { get; set; }
+        }
+
+        public class RecieveItem
+        {
+            public int id { get; set; }
+            public int recieve { get; set; }
+            public Product product { get; set; }
+            public double som { get; set; }
+            public double sotish_som { get; set; }
+            public double dollar { get; set; }
+            public double sotish_dollar { get; set; }
+            public double kurs { get; set; }
+            public double quantity { get; set; }
+        }
+
 
         private void txtQuantity_KeyDown(object sender, KeyEventArgs e)
         {
@@ -121,16 +165,16 @@ namespace JayhunOmbor
                 if (t.Result != "Error" && t.Result.Length != 0)
                 {
                     string Responce = t.Result;
-                    JObject objectRecieve = JObject.Parse(Responce);
-                    frmRecieveProduct.id = objectRecieve["id"].ToString();
-                    frmRecieveProduct.som = objectRecieve["som"].ToString();
-                    frmRecieveProduct.sotish_som = objectRecieve["sotish_som"].ToString();
-                    frmRecieveProduct.dollar = objectRecieve["dollar"].ToString();
-                    frmRecieveProduct.sotish_dollar = objectRecieve["sotish_dollar"].ToString();
-                    frmRecieveProduct.kurs = objectRecieve["kurs"].ToString();
-                    frmRecieveProduct.quantity = objectRecieve["quantity"].ToString();
-                    frmRecieveProduct.recieve = objectRecieve["recieve"].ToString();
-                    frmRecieveProduct.product1 = objectRecieve["product"].ToString();
+                    RecieveItem objectRecieve = JsonConvert.DeserializeObject<RecieveItem>(Responce);
+                    frmRecieveProduct.id = objectRecieve.id.ToString();
+                    frmRecieveProduct.som = objectRecieve.som.ToString();
+                    frmRecieveProduct.sotish_som = objectRecieve.sotish_som.ToString();
+                    frmRecieveProduct.dollar = objectRecieve.dollar.ToString();
+                    frmRecieveProduct.sotish_dollar = objectRecieve.sotish_dollar.ToString();
+                    frmRecieveProduct.kurs = objectRecieve.kurs.ToString();
+                    frmRecieveProduct.quantity = objectRecieve.quantity.ToString();
+                    frmRecieveProduct.recieve = objectRecieve.recieve.ToString();
+                    frmRecieveProduct.product1 = objectRecieve.product.id.ToString();
                     Form1.recieve = false;
                    
 
@@ -191,7 +235,7 @@ namespace JayhunOmbor
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc");
+                client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
                 try
                 {
                     HttpResponseMessage result = await client.PostAsync(u, c);

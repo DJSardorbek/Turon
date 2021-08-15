@@ -128,7 +128,7 @@ namespace JayhunOmbor
         {
             HttpClient apiCallClient = new HttpClient();
             string restCallURL = url;
-            string authToken = "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc";
+            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
@@ -240,7 +240,7 @@ namespace JayhunOmbor
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token d0347b90933d3d4b4fbd2d30fb2dd79d824091bc");
+                client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
                 try
                 {
                     HttpResponseMessage result = await client.PutAsync(u, c);

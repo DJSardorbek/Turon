@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 
@@ -17,7 +13,7 @@ namespace SotuvPlatformasi
         public MySqlTransaction DbTran;
         //public static string ip_address = "";//;;;;//Persist Security Info=False;server=192.168.10.149
 
-        public string strConnString = "datasource=127.0.0.1;port=3306;username=programmer;password=2427651701;database=turonfilial";
+        public string strConnString = "datasource=127.0.0.1;port=3306;username=programmer;password=2427651701;database=turonfilial;";
 
         public int executeDataAdapter(DataTable tblName, string strSelectMySql)
         {
@@ -40,7 +36,6 @@ namespace SotuvPlatformasi
                 throw ex;
             }
         }
-
 
         public int AliExecuteDataAdapter(DataTable tblName, string strSelectMySql)
         {

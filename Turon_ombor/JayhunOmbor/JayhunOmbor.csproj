@@ -130,6 +130,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBAccess.cs" />
     <Compile Include="frmAddNewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
