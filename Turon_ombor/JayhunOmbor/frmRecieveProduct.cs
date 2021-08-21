@@ -31,7 +31,7 @@ namespace JayhunOmbor
         {
             HttpClient apiCallClient = new HttpClient();
 
-            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
+            string authToken = "token b4e829ee7f3616338ec69381da368634759394f4";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
@@ -90,7 +90,7 @@ namespace JayhunOmbor
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
+                client.DefaultRequestHeaders.Add("Authorization", "token b4e829ee7f3616338ec69381da368634759394f4");
                 try
                 {
                     HttpResponseMessage result = await client.PostAsync(u, c);
@@ -424,7 +424,7 @@ namespace JayhunOmbor
         {
             HttpClient apiCallClient = new HttpClient();
             String restCallURL = "http://turonsavdo.backoffice.uz/api/product/";
-            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
+            string authToken = "token b4e829ee7f3616338ec69381da368634759394f4";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
@@ -445,7 +445,7 @@ namespace JayhunOmbor
                 using(HttpClient client = new HttpClient())
                 {
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
+                    string authToken = "token b4e829ee7f3616338ec69381da368634759394f4";
                     client.DefaultRequestHeaders.Add("Authorization", authToken);
                     var payload = "{\"status\": \"1\"}";
                     string apiUrl = "http://turonsavdo.backoffice.uz/api/recieve/" + recieve_id + "/";
@@ -758,7 +758,7 @@ namespace JayhunOmbor
                 using (var client = new HttpClient())
                 {
                     client.BaseAddress = new Uri("http://turonsavdo.backoffice.uz/");
-                    client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
+                    client.DefaultRequestHeaders.Add("Authorization", "token b4e829ee7f3616338ec69381da368634759394f4");
                     string url = "api/recieve/" + recieve_id + "/";
                     var response = client.DeleteAsync(url).Result;
                     if (response.IsSuccessStatusCode)

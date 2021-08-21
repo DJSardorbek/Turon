@@ -882,7 +882,7 @@ namespace SotuvPlatformasi
             var response = string.Empty;
             using (var client = new HttpClient())
             {
-                client.DefaultRequestHeaders.Add("Authorization", "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da");
+                client.DefaultRequestHeaders.Add("Authorization", "token b4e829ee7f3616338ec69381da368634759394f4");
                 try
                 {
                     HttpResponseMessage result = await client.PostAsync(u, c);
@@ -909,7 +909,7 @@ namespace SotuvPlatformasi
         public static async Task<string> GetObject(string restCallURL)
         {
             HttpClient apiCallClient = new HttpClient();
-            string authToken = "token 249d4a8aa9ecf75844d87926b7b7ee4e1cd8b1da";
+            string authToken = "token b4e829ee7f3616338ec69381da368634759394f4";
             HttpRequestMessage apirequest = new HttpRequestMessage(HttpMethod.Get, restCallURL);
             apirequest.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             apirequest.Headers.Add("Authorization", authToken);
