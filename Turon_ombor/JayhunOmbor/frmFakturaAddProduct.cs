@@ -150,7 +150,7 @@ namespace JayhunOmbor
             try
             {
                 product = frmFakturaTayyorlash.tbPr.Rows[frmFakturaTayyorlash.managerPr.Position]["Махсулот_ид"].ToString();
-                if (panelDollar.Visible)
+                if (panelDollar.Visible && txtDollar.Text !="0")
                 {
                     price_dollar = txtSoldPrice.Text;
                     tan_dollar = txtDollar.Text;

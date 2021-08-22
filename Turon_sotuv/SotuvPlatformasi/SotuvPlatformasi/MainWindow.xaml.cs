@@ -82,59 +82,6 @@ namespace SotuvPlatformasi
             tbSend.Dispose();
         }
 
-        /// <summary>
-        /// The function to start FakturaTimer
-        /// </summary>
-        //public void startFakturaTimer()
-        //{
-        //    string send = "select * from send";
-        //    DataTable tbSend = new DataTable();
-        //    objDBAccess.readDatathroughAdapter(send, tbSend);
-        //    if (tbSend.Rows.Count > 0)
-        //    {
-        //        string password = tbSend.Rows[0]["password"].ToString();
-        //        if (password == Kirish_ucont.password1)
-        //        {
-        //            timerFaktura.Tick += new EventHandler(StartFakturaSetAsync);
-        //            timerFaktura.Interval = new TimeSpan(0, 5, 0);
-        //            timer.Start();
-        //        }
-        //    }
-
-        //}
-
-        /// <summary>
-        /// The function to update product quantity from sended faktura
-        /// </summary>
-        //public async void StartFakturaSetAsync(object Source, EventArgs e)
-        //{
-        //    string response = await GetObject("http://turonsavdo.backoffice.uz/api/faktura?status=2");
-        //    FakturaSetQuan fakturaSetQuan = JsonConvert.DeserializeObject<FakturaSetQuan>(response);
-        //    if (fakturaSetQuan.count > 0)
-        //    {
-        //        string queryToProduct = "";
-        //        double pr_quan = 0, fk_quan = 0;
-        //        string str_pr_quan = "";
-        //        DataTable tbProduct = new DataTable();
-        //        MySqlCommand cmd;
-        //        foreach (var item in url)
-        //        {
-        //            queryToProduct = $"select quantity from product where barcode={url}";
-        //            tbProduct.Clear();
-        //            objDBAccess.readDatathroughAdapter(queryToProduct, tbProduct);
-        //            str_pr_quan = tbProduct.Rows[0]["quantity"].ToString();
-        //            pr_quan = double.Parse(str_pr_quan);
-        //            fk_quan = Convert.ToDouble(item);
-        //            pr_quan -= fk_quan;
-        //            cmd = new MySqlCommand($"update product set quantity='{pr_quan}' where barcode={url}");
-        //            objDBAccess.executeQuery(cmd);
-        //            cmd.Dispose();
-        //        }
-        //    }
-
-        //}
-
-
         public string DoubleToStr(string s)
         {
             if (s.IndexOf(',') > -1)
@@ -206,477 +153,484 @@ namespace SotuvPlatformasi
             {
                 send_finish = false;
 
-                #region Nasiyasiz savdolar uchun
-                string querySoldShop = "select * from shop where status_tulov = 1 and debt = 0 and status_server = 0";
-                tbSoldShop = new DataTable();
-
-                objDBAccess.readDatathroughAdapter(querySoldShop, tbSoldShop);
-                if (tbSoldShop.Rows.Count > 0)
+                try
                 {
-                    int CountSoldShop = tbSoldShop.Rows.Count;
-                    string naqd_som = "", naqd_dollar = "", plastik = "", transfer = "", skidka_som = "", skidka_dollar = "", saler = ""; //shop jadvali
-                    string queryCart = ""; DataTable tbCart = new DataTable();
-                    for (int i = 0; i < CountSoldShop; i++)
+                    #region Nasiyasiz savdolar uchun
+                    string querySoldShop = "select * from shop where status_tulov = 1 and debt = 0 and status_server = 0";
+                    tbSoldShop = new DataTable();
+
+                    objDBAccess.readDatathroughAdapter(querySoldShop, tbSoldShop);
+                    if (tbSoldShop.Rows.Count > 0)
                     {
-
-                        naqd_som = tbSoldShop.Rows[i]["naqd"].ToString();//
-                        naqd_som = DoubleToStr(naqd_som);
-
-                        naqd_dollar = tbSoldShop.Rows[i]["currency"].ToString();//
-                        naqd_dollar = DoubleToStr(naqd_dollar);
-
-                        plastik = tbSoldShop.Rows[i]["plastik"].ToString();//
-                        plastik = DoubleToStr(plastik);
-
-                        transfer = tbSoldShop.Rows[i]["transfer"].ToString();//
-                        transfer = DoubleToStr(transfer);
-
-
-                        skidka_som = tbSoldShop.Rows[i]["difference_som"].ToString();//
-                        double Dskidka_som = double.Parse(DoubleToStr(skidka_som), CultureInfo.InvariantCulture);
-
-                        skidka_dollar = tbSoldShop.Rows[i]["difference_dollar"].ToString();//
-                        double Dskidka_dollar = double.Parse(DoubleToStr(skidka_dollar), CultureInfo.InvariantCulture);
-
-                        saler = tbSoldShop.Rows[i]["sellar_id"].ToString();
-
-                        Uri u = new Uri("http://turonsavdo.backoffice.uz/api/shop/add/");
-
-                        newShop.naqd_som = double.Parse(naqd_som);
-                        newShop.naqd_dollar = double.Parse(naqd_dollar);
-                        newShop.nasiya_som = 0;
-                        newShop.nasiya_dollar = 0;
-                        newShop.plastik = double.Parse(plastik);
-                        newShop.transfer = double.Parse(transfer);
-                        newShop.skidka_som = double.Parse(skidka_som);
-                        newShop.skidka_dollar = double.Parse(skidka_dollar);
-                        newShop.filial = int.Parse(filial_id);
-                        newShop.saler = int.Parse(saler);
-
-
-                        //The query for get cart list
-                        queryCart = "select cart.quantity, product.barcode from cart " +
-                            "inner join product on cart.product_id = product.product_id " +
-                            "where shop_id='" + tbSoldShop.Rows[i]["id"] + "'";
-                        tbCart.Clear();
-                        objDBAccess.readDatathroughAdapter(queryCart, tbCart);
-                        newShop.cart = (from DataRow dr in tbCart.Rows
-                                        select new Cart()
-                                        {
-                                            quantity = Convert.ToDouble(dr["quantity"]),
-                                            barcode = dr["barcode"].ToString()
-                                        }).ToList();
-
-                        //var payload = "{\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \""+naqd_dollar+"\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \"0\",\"nasiya_dollar\": \"0\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \""+skidka_som+"\",\"skidka_dollar\": \"" + skidka_dollar+ "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\"}";
-
-                        string payload = JsonConvert.SerializeObject(newShop);
-
-                        HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
-                        var t = Task.Run(() => PostURI(u, content));
-                        t.Wait();
-                        if (t.Result == "Error!")
+                        int CountSoldShop = tbSoldShop.Rows.Count;
+                        string naqd_som = "", naqd_dollar = "", plastik = "", transfer = "", skidka_som = "", skidka_dollar = "", saler = ""; //shop jadvali
+                        string queryCart = ""; DataTable tbCart = new DataTable();
+                        for (int i = 0; i < CountSoldShop; i++)
                         {
-                            Title = "Server bilan bog'lanishda xatolik, iltimos internetni tekshiring!";
+
+                            naqd_som = tbSoldShop.Rows[i]["naqd"].ToString();//
+                            naqd_som = DoubleToStr(naqd_som);
+
+                            naqd_dollar = tbSoldShop.Rows[i]["currency"].ToString();//
+                            naqd_dollar = DoubleToStr(naqd_dollar);
+
+                            plastik = tbSoldShop.Rows[i]["plastik"].ToString();//
+                            plastik = DoubleToStr(plastik);
+
+                            transfer = tbSoldShop.Rows[i]["transfer"].ToString();//
+                            transfer = DoubleToStr(transfer);
+
+
+                            skidka_som = tbSoldShop.Rows[i]["difference_som"].ToString();//
+                            double Dskidka_som = double.Parse(DoubleToStr(skidka_som), CultureInfo.InvariantCulture);
+
+                            skidka_dollar = tbSoldShop.Rows[i]["difference_dollar"].ToString();//
+                            double Dskidka_dollar = double.Parse(DoubleToStr(skidka_dollar), CultureInfo.InvariantCulture);
+
+                            saler = tbSoldShop.Rows[i]["sellar_id"].ToString();
+
+                            Uri u = new Uri("http://turonsavdo.backoffice.uz/api/shop/add/");
+
+                            newShop.naqd_som = double.Parse(naqd_som);
+                            newShop.naqd_dollar = double.Parse(naqd_dollar);
+                            newShop.nasiya_som = 0;
+                            newShop.nasiya_dollar = 0;
+                            newShop.plastik = double.Parse(plastik);
+                            newShop.transfer = double.Parse(transfer);
+                            newShop.skidka_som = double.Parse(skidka_som);
+                            newShop.skidka_dollar = double.Parse(skidka_dollar);
+                            newShop.filial = int.Parse(filial_id);
+                            newShop.saler = int.Parse(saler);
+
+
+                            //The query for get cart list
+                            queryCart = "select cart.quantity, product.barcode from cart " +
+                                "inner join product on cart.product_id = product.product_id " +
+                                "where shop_id='" + tbSoldShop.Rows[i]["id"] + "'";
+                            tbCart.Clear();
+                            objDBAccess.readDatathroughAdapter(queryCart, tbCart);
+                            newShop.cart = (from DataRow dr in tbCart.Rows
+                                            select new Cart()
+                                            {
+                                                quantity = Convert.ToDouble(dr["quantity"]),
+                                                barcode = dr["barcode"].ToString()
+                                            }).ToList();
+
+                            //var payload = "{\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \""+naqd_dollar+"\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \"0\",\"nasiya_dollar\": \"0\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \""+skidka_som+"\",\"skidka_dollar\": \"" + skidka_dollar+ "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\"}";
+
+                            string payload = JsonConvert.SerializeObject(newShop);
+
+                            HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
+                            var t = Task.Run(() => PostURI(u, content));
+                            t.Wait();
+                            if (t.Result == "Error!")
+                            {
+                                Title = "Server bilan bog'lanishda xatolik, iltimos internetni tekshiring!";
+                            }
+                            else if (t.Result != "Error!")
+                            {
+                                Title = "Savdo jo'natilmoqda...";
+                                cmdSendShop = new MySqlCommand("update shop set status_server=1 where id='" + tbSoldShop.Rows[i]["id"] + "'");
+                                objDBAccess.executeQuery(cmdSendShop);
+                                cmdSendShop.Dispose();
+                            }
                         }
-                        else if (t.Result != "Error!")
+                        tbCart.Dispose();
+                    }
+                    else
+                    {
+                        Title = "Savdo jo'natilgan...";
+                    }
+                    tbSoldShop.Clear();
+                    tbSoldShop.Dispose();
+                    #endregion
+
+                    #region Nasiya aralash savdo uchun
+                    string queryMixShop = "select * from shop where status_tulov = 1 and debt = 1 and status_server = 0";
+                    tbMixShop = new DataTable();
+                    objDBAccess.readDatathroughAdapter(queryMixShop, tbMixShop);
+                    if (tbMixShop.Rows.Count > 0)
+                    {
+                        int CountMixShop = tbMixShop.Rows.Count;
+                        string naqd_som = "", naqd_dollar = "", plastik = "", transfer = "", skidka_som = "", skidka_dollar = "", saler = ""; //shop jadvali
+                        string fio = "", phone = "", nasiya_som = "", nasiya_dollar = ""; // debtor jadvali
+                        string queryCart = ""; DataTable tbCart = new DataTable();
+
+                        for (int i = 0; i < CountMixShop; i++)
                         {
-                            Title = "Savdo jo'natilmoqda...";
-                            cmdSendShop = new MySqlCommand("update shop set status_server=1 where id='" + tbSoldShop.Rows[i]["id"] + "'");
-                            objDBAccess.executeQuery(cmdSendShop);
-                            cmdSendShop.Dispose();
+
+
+                            naqd_som = tbMixShop.Rows[i]["naqd"].ToString();//
+                            naqd_som = DoubleToStr(naqd_som);
+
+                            naqd_dollar = tbMixShop.Rows[i]["currency"].ToString();//
+                            naqd_dollar = DoubleToStr(naqd_dollar);
+
+                            plastik = tbMixShop.Rows[i]["plastik"].ToString();//
+                            plastik = DoubleToStr(plastik);
+
+                            transfer = tbMixShop.Rows[i]["transfer"].ToString();//
+                            transfer = DoubleToStr(transfer);
+
+
+                            skidka_som = tbMixShop.Rows[i]["difference_som"].ToString();//
+                            double Dskidka_som = double.Parse(DoubleToStr(skidka_som), CultureInfo.InvariantCulture);
+
+                            skidka_dollar = tbMixShop.Rows[i]["difference_dollar"].ToString();//
+                            double Dskidka_dollar = double.Parse(DoubleToStr(skidka_dollar), CultureInfo.InvariantCulture);
+
+                            nasiya_som = tbMixShop.Rows[i]["nasiya_som"].ToString();//
+                            nasiya_som = DoubleToStr(nasiya_som);
+
+                            nasiya_dollar = tbMixShop.Rows[i]["nasiya_dollar"].ToString();//
+                            nasiya_dollar = DoubleToStr(nasiya_dollar);
+
+                            saler = tbMixShop.Rows[i]["sellar_id"].ToString();
+
+                            string queryDebtDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbMixShop.Rows[i]["id"] + "'";
+                            tbDebtDebtor = new DataTable();
+                            objDBAccess.readDatathroughAdapter(queryDebtDebtor, tbDebtDebtor);
+
+                            fio = tbDebtDebtor.Rows[0]["mijoz_fish"].ToString();
+                            phone = tbDebtDebtor.Rows[0]["tel_1"].ToString();
+
+                            tbDebtDebtor.Clear();
+                            tbDebtDebtor.Dispose();
+
+                            Uri u = new Uri("http://turonsavdo.backoffice.uz/api/shop/add/");
+
+                            newShopWithDebt.naqd_som = double.Parse(naqd_som);
+                            newShopWithDebt.naqd_dollar = double.Parse(naqd_dollar);
+                            newShopWithDebt.nasiya_som = double.Parse(nasiya_som);
+                            newShopWithDebt.nasiya_dollar = double.Parse(nasiya_dollar);
+                            newShopWithDebt.plastik = double.Parse(plastik);
+                            newShopWithDebt.transfer = double.Parse(transfer);
+                            newShopWithDebt.skidka_som = double.Parse(skidka_som);
+                            newShopWithDebt.skidka_dollar = double.Parse(skidka_dollar);
+                            newShopWithDebt.saler = int.Parse(saler);
+                            newShopWithDebt.filial = int.Parse(filial_id);
+                            newShopWithDebt.fio = fio;
+                            newShopWithDebt.phone = phone;
+
+                            // The query for get cart list
+                            queryCart = "select cart.quantity, product.barcode from cart " +
+                                "inner join product on cart.product_id = product.product_id " +
+                                "where shop_id='" + tbMixShop.Rows[i]["id"] + "'";
+                            tbCart.Clear();
+                            objDBAccess.readDatathroughAdapter(queryCart, tbCart);
+                            newShopWithDebt.cart = (from DataRow dr in tbCart.Rows
+                                                    select new Cart()
+                                                    {
+                                                        quantity = Convert.ToDouble(dr["quantity"]),
+                                                        barcode = dr["barcode"].ToString()
+                                                    }).ToList();
+
+                            //var payload = "{\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \"" + naqd_dollar + "\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \""+nasiya_som+"\",\"nasiya_dollar\": \""+nasiya_dollar+"\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \""+fio+"\",\"phone\": \""+phone+"\"}";
+
+                            string payload = JsonConvert.SerializeObject(newShopWithDebt);
+
+                            HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
+                            var t = Task.Run(() => PostURI(u, content));
+                            t.Wait();
+                            if (t.Result == "Error!")
+                            {
+                                Title = "Server bilan bog'lanishda xatolik, iltimos internetni tekshiring!";
+                            }
+                            else if (t.Result != "Error!")
+                            {
+                                Title = "Savdo jo'natilmoqda...";
+                                cmdSendShop = new MySqlCommand("update shop set status_server=1 where id='" + tbMixShop.Rows[i]["id"] + "'");
+                                objDBAccess.executeQuery(cmdSendShop);
+                                cmdSendShop.Dispose();
+                            }
+                        }
+                        tbCart.Dispose();
+                    }
+                    else
+                    {
+                        Title = "Savdo jo'natilgan...";
+                    }
+                    tbMixShop.Clear();
+                    tbMixShop.Dispose();
+                    #endregion
+
+                    #region Nasiya uchun
+                    string queryDebtShop = "select * from shop where status_tulov = 0 and debt = 1 and status_server = 0";
+                    tbDebtShop = new DataTable();
+                    objDBAccess.readDatathroughAdapter(queryDebtShop, tbDebtShop);
+                    if (tbDebtShop.Rows.Count > 0)
+                    {
+                        int CountDebtShop = tbDebtShop.Rows.Count;
+                        string skidka_som = "", skidka_dollar = "", saler = ""; //shop jadvali
+                        string fio = "", phone = "", nasiya_som = "", nasiya_dollar = ""; // debtor jadvali
+                        string queryCart = ""; DataTable tbCart = new DataTable();
+                        for (int i = 0; i < CountDebtShop; i++)
+                        {
+
+                            nasiya_som = tbDebtShop.Rows[i]["nasiya_som"].ToString();//
+                            nasiya_som = DoubleToStr(nasiya_som);
+
+                            nasiya_dollar = tbDebtShop.Rows[i]["nasiya_dollar"].ToString();//
+                            nasiya_dollar = DoubleToStr(nasiya_dollar);
+
+                            skidka_som = tbDebtShop.Rows[i]["skidka_som"].ToString();//
+                            skidka_som = DoubleToStr(skidka_som);
+
+                            skidka_dollar = tbDebtShop.Rows[i]["skidka_dollar"].ToString();//
+                            skidka_dollar = DoubleToStr(skidka_dollar);
+
+                            saler = tbDebtShop.Rows[i]["sellar_id"].ToString();
+
+                            string queryDebtDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbDebtShop.Rows[i]["id"] + "'";
+                            tbDebtDebtor = new DataTable();
+                            objDBAccess.readDatathroughAdapter(queryDebtDebtor, tbDebtDebtor);
+                            fio = tbDebtDebtor.Rows[0]["mijoz_fish"].ToString();
+                            phone = tbDebtDebtor.Rows[0]["tel_1"].ToString();
+                            tbDebtDebtor.Clear();
+                            tbDebtDebtor.Dispose();
+
+                            Uri u = new Uri("http://turonsavdo.backoffice.uz/api/shop/add/");
+
+                            newShopWithDebt.naqd_som = 0;
+                            newShopWithDebt.naqd_dollar = 0;
+                            newShopWithDebt.nasiya_som = double.Parse(nasiya_som);
+                            newShopWithDebt.nasiya_dollar = double.Parse(nasiya_dollar);
+                            newShopWithDebt.plastik = 0;
+                            newShopWithDebt.transfer = 0;
+                            newShopWithDebt.skidka_som = double.Parse(skidka_som);
+                            newShopWithDebt.skidka_dollar = double.Parse(skidka_dollar);
+                            newShopWithDebt.filial = int.Parse(filial_id);
+                            newShopWithDebt.saler = int.Parse(saler);
+                            newShopWithDebt.fio = fio;
+                            newShopWithDebt.phone = phone;
+
+                            // The query for get cart list
+                            queryCart = "select cart.quantity, product.barcode from cart " +
+                                "inner join product on cart.product_id = product.product_id " +
+                                "where shop_id='" + tbDebtShop.Rows[i]["id"] + "'";
+                            tbCart.Clear();
+                            objDBAccess.readDatathroughAdapter(queryCart, tbCart);
+                            newShopWithDebt.cart = (from DataRow dr in tbCart.Rows
+                                                    select new Cart()
+                                                    {
+                                                        quantity = Convert.ToDouble(dr["quantity"]),
+                                                        barcode = dr["barcode"].ToString()
+                                                    }).ToList();
+
+                            //var payload = "{\"naqd_som\": \"0\",\"naqd_dollar\": \"0\",\"plastik\": \"0\",\"nasiya_som\": \"" + nasiya_som + "\",\"nasiya_dollar\": \"" + nasiya_dollar + "\",\"transfer\": \"0\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \"" + fio + "\",\"phone\": \"" + phone + "\"}";
+
+                            string payload = JsonConvert.SerializeObject(newShopWithDebt);
+
+                            HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
+                            var t = Task.Run(() => PostURI(u, content));
+                            t.Wait();
+                            if (t.Result == "Error!")
+                            {
+                                Title = "Server bilan bog'lanishda xatolik, iltimos internetni tekshiring!";
+                            }
+                            else if (t.Result != "Error!")
+                            {
+                                Title = "Savdo jo'natilmoqda...";
+                                cmdSendShop = new MySqlCommand("update shop set status_server=1 where id='" + tbDebtShop.Rows[i]["id"] + "'");
+                                objDBAccess.executeQuery(cmdSendShop);
+                                cmdSendShop.Dispose();
+                            }
+                        }
+                        tbCart.Dispose();
+                    }
+                    else
+                    {
+                        Title = "Savdo jo'natilgan...";
+                    }
+                    tbDebtShop.Clear();
+                    tbDebtShop.Dispose();
+                    #endregion
+
+                    #region Payhistory uchun
+                    string queryPayHistory = "select * from payhistory where status_server = 0";
+                    tbSendPayHistory = new DataTable();
+                    objDBAccess.readDatathroughAdapter(queryPayHistory, tbSendPayHistory);
+                    if (tbSendPayHistory.Rows.Count > 0)
+                    {
+                        int CountPayHistory = tbSendPayHistory.Rows.Count;
+                        string given_som = "", given_dollar = ""; //payhistory jadvali
+                        string fio = "", phone1 = ""; // debtor va debt jadvali
+                        for (int i = 0; i < CountPayHistory; i++)
+                        {
+                            given_som = tbSendPayHistory.Rows[i]["given_som"].ToString();//
+                            given_som = DoubleToStr(given_som);
+
+                            given_dollar = tbSendPayHistory.Rows[i]["given_dollar"].ToString();//
+                            given_dollar = DoubleToStr(given_dollar);
+
+                            string queryPayDebtor = "select debtor.mijoz_fish,debtor.tel_1 from debtor inner join payhistory on debtor.id = payhistory.debtor_id where debtor.id='" + tbSendPayHistory.Rows[i]["debtor_id"] + "'";
+                            tbPayDebtor = new DataTable();
+                            objDBAccess.readDatathroughAdapter(queryPayDebtor, tbPayDebtor);
+                            fio = tbPayDebtor.Rows[0]["mijoz_fish"].ToString();
+                            phone1 = tbPayDebtor.Rows[0]["tel_1"].ToString();
+                            tbPayDebtor.Clear();
+                            tbPayDebtor.Dispose();
+                            Uri u = new Uri("http://turonsavdo.backoffice.uz/api/payhistory/add/");
+
+                            var payload = "{\"filial\": \"" + filial_id + "\",\"som\": \"" + given_som + "\",\"dollar\": \"" + given_dollar + "\",\"fio\": \"" + fio + "\",\"phone1\": \"" + phone1 + "\"}";
+                            //MessageBox.Show(payload);
+                            HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
+                            var t = Task.Run(() => PostURI(u, content));
+                            t.Wait();
+                            if (t.Result == "Error!")
+                            {
+                                Title = "Server bilan bo'glanishda xatolik, iltimos internetni tekshiring!";
+                            }
+                            else if (t.Result != "Error!")
+                            {
+                                Title = "Savdo jo'natilmoqda...";
+                                cmdSendShop = new MySqlCommand("update payhistory set status_server=1 where id='" + tbSendPayHistory.Rows[i]["id"] + "'");
+                                objDBAccess.executeQuery(cmdSendShop);
+                                cmdSendShop.Dispose();
+                            }
                         }
                     }
-                    tbCart.Dispose();
-                }
-                else
-                {
-                    Title = "Savdo jo'natilgan...";
-                }
-                tbSoldShop.Clear();
-                tbSoldShop.Dispose();
-                #endregion
-
-                #region Nasiya aralash savdo uchun
-                string queryMixShop = "select * from shop where status_tulov = 1 and debt = 1 and status_server = 0";
-                tbMixShop = new DataTable();
-                objDBAccess.readDatathroughAdapter(queryMixShop, tbMixShop);
-                if (tbMixShop.Rows.Count > 0)
-                {
-                    int CountMixShop = tbMixShop.Rows.Count;
-                    string naqd_som = "", naqd_dollar = "", plastik = "", transfer = "", skidka_som = "", skidka_dollar = "", saler = ""; //shop jadvali
-                    string fio = "", phone = "", nasiya_som = "", nasiya_dollar = ""; // debtor jadvali
-                    string queryCart = ""; DataTable tbCart = new DataTable();
-
-                    for (int i = 0; i < CountMixShop; i++)
+                    else
                     {
+                        Title = "Savdo jo'natilgan...";
+                    }
+                    tbSendPayHistory.Clear();
+                    tbSendPayHistory.Dispose();
+                    #endregion
 
-
-                        naqd_som = tbMixShop.Rows[i]["naqd"].ToString();//
-                        naqd_som = DoubleToStr(naqd_som);
-
-                        naqd_dollar = tbMixShop.Rows[i]["currency"].ToString();//
-                        naqd_dollar = DoubleToStr(naqd_dollar);
-
-                        plastik = tbMixShop.Rows[i]["plastik"].ToString();//
-                        plastik = DoubleToStr(plastik);
-
-                        transfer = tbMixShop.Rows[i]["transfer"].ToString();//
-                        transfer = DoubleToStr(transfer);
-
-
-                        skidka_som = tbMixShop.Rows[i]["difference_som"].ToString();//
-                        double Dskidka_som = double.Parse(DoubleToStr(skidka_som), CultureInfo.InvariantCulture);
-
-                        skidka_dollar = tbMixShop.Rows[i]["difference_dollar"].ToString();//
-                        double Dskidka_dollar = double.Parse(DoubleToStr(skidka_dollar), CultureInfo.InvariantCulture);
-
-                        nasiya_som = tbMixShop.Rows[i]["nasiya_som"].ToString();//
-                        nasiya_som = DoubleToStr(nasiya_som);
-
-                        nasiya_dollar = tbMixShop.Rows[i]["nasiya_dollar"].ToString();//
-                        nasiya_dollar = DoubleToStr(nasiya_dollar);
-
-                        saler = tbMixShop.Rows[i]["sellar_id"].ToString();
-
-                        string queryDebtDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbMixShop.Rows[i]["id"] + "'";
-                        tbDebtDebtor = new DataTable();
-                        objDBAccess.readDatathroughAdapter(queryDebtDebtor, tbDebtDebtor);
-
-                        fio = tbDebtDebtor.Rows[0]["mijoz_fish"].ToString();
-                        phone = tbDebtDebtor.Rows[0]["tel_1"].ToString();
-
-                        tbDebtDebtor.Clear();
-                        tbDebtDebtor.Dispose();
-
-                        Uri u = new Uri("http://turonsavdo.backoffice.uz/api/shop/add/");
-
-                        newShopWithDebt.naqd_som = double.Parse(naqd_som);
-                        newShopWithDebt.naqd_dollar = double.Parse(naqd_dollar);
-                        newShopWithDebt.nasiya_som = double.Parse(nasiya_som);
-                        newShopWithDebt.nasiya_dollar = double.Parse(nasiya_dollar);
-                        newShopWithDebt.plastik = double.Parse(plastik);
-                        newShopWithDebt.transfer = double.Parse(transfer);
-                        newShopWithDebt.skidka_som = double.Parse(skidka_som);
-                        newShopWithDebt.skidka_dollar = double.Parse(skidka_dollar);
-                        newShopWithDebt.saler = int.Parse(saler);
-                        newShopWithDebt.filial = int.Parse(filial_id);
-                        newShopWithDebt.fio = fio;
-                        newShopWithDebt.phone = phone;
-
-                        // The query for get cart list
-                        queryCart = "select cart.quantity, product.barcode from cart " +
-                            "inner join product on cart.product_id = product.product_id " +
-                            "where shop_id='" + tbMixShop.Rows[i]["id"] + "'";
-                        tbCart.Clear();
-                        objDBAccess.readDatathroughAdapter(queryCart, tbCart);
-                        newShopWithDebt.cart = (from DataRow dr in tbCart.Rows
-                                                select new Cart()
-                                                {
-                                                    quantity = Convert.ToDouble(dr["quantity"]),
-                                                    barcode = dr["barcode"].ToString()
-                                                }).ToList();
-
-                        //var payload = "{\"naqd_som\": \"" + naqd_som + "\",\"naqd_dollar\": \"" + naqd_dollar + "\",\"plastik\": \"" + plastik + "\",\"nasiya_som\": \""+nasiya_som+"\",\"nasiya_dollar\": \""+nasiya_dollar+"\",\"transfer\": \"" + transfer + "\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \""+fio+"\",\"phone\": \""+phone+"\"}";
-
-                        string payload = JsonConvert.SerializeObject(newShopWithDebt);
-
-                        HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
-                        var t = Task.Run(() => PostURI(u, content));
-                        t.Wait();
-                        if (t.Result == "Error!")
+                    #region ReturnProduct savdo uchun status 0 jo'natiladi
+                    string queryReturnProduct = "select * from returnproduct where sold = 1 and status_server=0";
+                    tbSoldRetPro = new DataTable();
+                    objDBAccess.readDatathroughAdapter(queryReturnProduct, tbSoldRetPro);
+                    if (tbSoldRetPro.Rows.Count > 0)
+                    {
+                        int CountSoldRetPro = tbSoldRetPro.Rows.Count;
+                        string return_quan = "", som = "0", dollar = "0", difference = "", barcode = "", val_id = ""; // returnproduct jadvali
+                        for (int i = 0; i < CountSoldRetPro; i++)
                         {
-                            Title = "Server bilan bog'lanishda xatolik, iltimos internetni tekshiring!";
-                        }
-                        else if (t.Result != "Error!")
-                        {
-                            Title = "Savdo jo'natilmoqda...";
-                            cmdSendShop = new MySqlCommand("update shop set status_server=1 where id='" + tbMixShop.Rows[i]["id"] + "'");
-                            objDBAccess.executeQuery(cmdSendShop);
-                            cmdSendShop.Dispose();
+                            return_quan = tbSoldRetPro.Rows[i]["return_quantity"].ToString(); //
+                            return_quan = DoubleToStr(return_quan);
+
+                            val_id = tbSoldRetPro.Rows[i]["val_id"].ToString();
+                            if (val_id == "1")
+                            {
+                                som = tbSoldRetPro.Rows[i]["summa"].ToString();
+                                som = DoubleToStr(som);
+                            }
+                            else { som = "0"; }
+
+                            if (val_id == "2")
+                            {
+                                dollar = tbSoldRetPro.Rows[i]["summa"].ToString();
+                                dollar = DoubleToStr(dollar);
+                            }
+                            else { dollar = "0"; }
+
+                            difference = tbSoldRetPro.Rows[i]["difference"].ToString(); //
+                            difference = DoubleToStr(difference);
+                            barcode = tbSoldRetPro.Rows[i]["barcode"].ToString();
+
+                            Uri u = new Uri("http://turonsavdo.backoffice.uz/api/returnproduct/add/");
+
+                            var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \"" + dollar + "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"0\",\"barcode\": \"" + barcode + "\"}";
+                            //MessageBox.Show(payload);
+                            HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
+                            var t = Task.Run(() => PostURI(u, content));
+                            t.Wait();
+                            if (t.Result == "Error!")
+                            {
+                                Title = "Server bilan bo'glanishda xatolik, iltimos internetni tekshiring!";
+                            }
+                            else if (t.Result != "Error!")
+                            {
+                                Title = "Savdo jo'natilmoqda...";
+                                cmdSendShop = new MySqlCommand("update returnproduct set status_server=1 where id='" + tbSoldRetPro.Rows[i]["id"] + "'");
+                                objDBAccess.executeQuery(cmdSendShop);
+                                cmdSendShop.Dispose();
+                            }
                         }
                     }
-                    tbCart.Dispose();
-                }
-                else
-                {
-                    Title = "Savdo jo'natilgan...";
-                }
-                tbMixShop.Clear();
-                tbMixShop.Dispose();
-                #endregion
-
-                #region Nasiya uchun
-                string queryDebtShop = "select * from shop where status_tulov = 0 and debt = 1 and status_server = 0";
-                tbDebtShop = new DataTable();
-                objDBAccess.readDatathroughAdapter(queryDebtShop, tbDebtShop);
-                if (tbDebtShop.Rows.Count > 0)
-                {
-                    int CountDebtShop = tbDebtShop.Rows.Count;
-                    string skidka_som = "", skidka_dollar = "", saler = ""; //shop jadvali
-                    string fio = "", phone = "", nasiya_som = "", nasiya_dollar = ""; // debtor jadvali
-                    string queryCart = ""; DataTable tbCart = new DataTable();
-                    for (int i = 0; i < CountDebtShop; i++)
+                    else
                     {
+                        Title = "Savdo jo'natilgan...";
+                    }
+                    tbSoldRetPro.Clear();
+                    tbSoldRetPro.Dispose();
+                    #endregion
 
-                        nasiya_som = tbDebtShop.Rows[i]["nasiya_som"].ToString();//
-                        nasiya_som = DoubleToStr(nasiya_som);
-
-                        nasiya_dollar = tbDebtShop.Rows[i]["nasiya_dollar"].ToString();//
-                        nasiya_dollar = DoubleToStr(nasiya_dollar);
-
-                        skidka_som = tbDebtShop.Rows[i]["skidka_som"].ToString();//
-                        skidka_som = DoubleToStr(skidka_som);
-
-                        skidka_dollar = tbDebtShop.Rows[i]["skidka_dollar"].ToString();//
-                        skidka_dollar = DoubleToStr(skidka_dollar);
-
-                        saler = tbDebtShop.Rows[i]["sellar_id"].ToString();
-
-                        string queryDebtDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbDebtShop.Rows[i]["id"] + "'";
-                        tbDebtDebtor = new DataTable();
-                        objDBAccess.readDatathroughAdapter(queryDebtDebtor, tbDebtDebtor);
-                        fio = tbDebtDebtor.Rows[0]["mijoz_fish"].ToString();
-                        phone = tbDebtDebtor.Rows[0]["tel_1"].ToString();
-                        tbDebtDebtor.Clear();
-                        tbDebtDebtor.Dispose();
-
-                        Uri u = new Uri("http://turonsavdo.backoffice.uz/api/shop/add/");
-
-                        newShopWithDebt.naqd_som = 0;
-                        newShopWithDebt.naqd_dollar = 0;
-                        newShopWithDebt.nasiya_som = double.Parse(nasiya_som);
-                        newShopWithDebt.nasiya_dollar = double.Parse(nasiya_dollar);
-                        newShopWithDebt.plastik = 0;
-                        newShopWithDebt.transfer = 0;
-                        newShopWithDebt.skidka_som = double.Parse(skidka_som);
-                        newShopWithDebt.skidka_dollar = double.Parse(skidka_dollar);
-                        newShopWithDebt.filial = int.Parse(filial_id);
-                        newShopWithDebt.saler = int.Parse(saler);
-                        newShopWithDebt.fio = fio;
-                        newShopWithDebt.phone = phone;
-
-                        // The query for get cart list
-                        queryCart = "select cart.quantity, product.barcode from cart " +
-                            "inner join product on cart.product_id = product.product_id " +
-                            "where shop_id='" + tbDebtShop.Rows[i]["id"] + "'";
-                        tbCart.Clear();
-                        objDBAccess.readDatathroughAdapter(queryCart, tbCart);
-                        newShopWithDebt.cart = (from DataRow dr in tbCart.Rows
-                                                select new Cart()
-                                                {
-                                                    quantity = Convert.ToDouble(dr["quantity"]),
-                                                    barcode = dr["barcode"].ToString()
-                                                }).ToList();
-
-                        //var payload = "{\"naqd_som\": \"0\",\"naqd_dollar\": \"0\",\"plastik\": \"0\",\"nasiya_som\": \"" + nasiya_som + "\",\"nasiya_dollar\": \"" + nasiya_dollar + "\",\"transfer\": \"0\",\"skidka_som\": \"" + skidka_som + "\",\"skidka_dollar\": \"" + skidka_dollar + "\",\"filial\": \"" + filial_id + "\",\"saler\": \"" + saler + "\",\"fio\": \"" + fio + "\",\"phone\": \"" + phone + "\"}";
-
-                        string payload = JsonConvert.SerializeObject(newShopWithDebt);
-
-                        HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
-                        var t = Task.Run(() => PostURI(u, content));
-                        t.Wait();
-                        if (t.Result == "Error!")
+                    #region ReturnProduct nasiya uchun
+                    string queryDebtRetPro = "select * from returnproduct where debt = 1 and status_server = 0";
+                    tbDebtRetPro = new DataTable();
+                    objDBAccess.readDatathroughAdapter(queryDebtRetPro, tbDebtRetPro);
+                    if (tbDebtRetPro.Rows.Count > 0)
+                    {
+                        int CountDebtRetPro = tbDebtRetPro.Rows.Count;
+                        string return_quan = "", som = "0", dollar = "0", difference = "", barcode = "", val_id = ""; // returnproduct jadvali
+                        string fio = "", phone1 = "";
+                        for (int i = 0; i < CountDebtRetPro; i++)
                         {
-                            Title = "Server bilan bog'lanishda xatolik, iltimos internetni tekshiring!";
-                        }
-                        else if (t.Result != "Error!")
-                        {
-                            Title = "Savdo jo'natilmoqda...";
-                            cmdSendShop = new MySqlCommand("update shop set status_server=1 where id='" + tbDebtShop.Rows[i]["id"] + "'");
-                            objDBAccess.executeQuery(cmdSendShop);
-                            cmdSendShop.Dispose();
+                            return_quan = tbSoldRetPro.Rows[i]["return_quantity"].ToString(); //
+                            return_quan = DoubleToStr(return_quan);
+
+                            val_id = tbSoldRetPro.Rows[i]["val_id"].ToString();
+                            if (val_id == "1")
+                            {
+                                som = tbSoldRetPro.Rows[i]["summa"].ToString();
+                                som = DoubleToStr(som);
+                            }
+                            else { som = "0"; }
+
+                            if (val_id == "2")
+                            {
+                                dollar = tbSoldRetPro.Rows[i]["summa"].ToString();
+                                dollar = DoubleToStr(dollar);
+                            }
+                            else { dollar = "0"; }
+
+                            difference = tbSoldRetPro.Rows[i]["difference"].ToString(); //
+                            difference = DoubleToStr(difference);
+                            barcode = tbSoldRetPro.Rows[i]["barcode"].ToString();
+
+                            string queryDebtRetDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbDebtRetPro.Rows[i]["shop_id"] + "'";
+                            tbDebtRetDebtor = new DataTable();
+                            objDBAccess.readDatathroughAdapter(queryDebtRetDebtor, tbDebtRetDebtor);
+
+                            fio = tbDebtRetDebtor.Rows[0]["mijoz_fish"].ToString();
+                            phone1 = tbDebtRetDebtor.Rows[0]["tel_1"].ToString();
+                            tbDebtRetDebtor.Clear();
+                            tbDebtRetDebtor.Dispose();
+
+                            Uri u = new Uri("http://turonsavdo.backoffice.uz/api/returnproduct/add/");
+
+                            var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \"" + dollar + "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"1\",\"barcode\": \"" + barcode + "\",\"fio\": \"" + fio + "\",\"phone1\": \"" + phone1 + "\"}";
+                            HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
+                            var t = Task.Run(() => PostURI(u, content));
+                            t.Wait();
+                            if (t.Result == "Error!")
+                            {
+                                Title = "Server bilan bo'lanishda xatolik, iltimos internetni tekshiring!";
+                            }
+                            else if (t.Result != "Error!")
+                            {
+                                Title = "Savdo jo'natilmoqda...";
+                                cmdSendShop = new MySqlCommand("update returnproduct set status_server=1 where id='" + tbDebtRetPro.Rows[i]["id"] + "'");
+                                objDBAccess.executeQuery(cmdSendShop);
+                                cmdSendShop.Dispose();
+                            }
                         }
                     }
-                    tbCart.Dispose();
-                }
-                else
-                {
-                    Title = "Savdo jo'natilgan...";
-                }
-                tbDebtShop.Clear();
-                tbDebtShop.Dispose();
-                #endregion
-
-                #region Payhistory uchun
-                string queryPayHistory = "select * from payhistory where status_server = 0";
-                tbSendPayHistory = new DataTable();
-                objDBAccess.readDatathroughAdapter(queryPayHistory, tbSendPayHistory);
-                if (tbSendPayHistory.Rows.Count > 0)
-                {
-                    int CountPayHistory = tbSendPayHistory.Rows.Count;
-                    string given_som = "", given_dollar = ""; //payhistory jadvali
-                    string fio = "", phone1 = ""; // debtor va debt jadvali
-                    for (int i = 0; i < CountPayHistory; i++)
+                    else
                     {
-                        given_som = tbSendPayHistory.Rows[i]["given_som"].ToString();//
-                        given_som = DoubleToStr(given_som);
-
-                        given_dollar = tbSendPayHistory.Rows[i]["given_dollar"].ToString();//
-                        given_dollar = DoubleToStr(given_dollar);
-
-                        string queryPayDebtor = "select debtor.mijoz_fish,debtor.tel_1 from debtor inner join payhistory on debtor.id = payhistory.debtor_id where debtor.id='" + tbSendPayHistory.Rows[i]["debtor_id"] + "'";
-                        tbPayDebtor = new DataTable();
-                        objDBAccess.readDatathroughAdapter(queryPayDebtor, tbPayDebtor);
-                        fio = tbPayDebtor.Rows[0]["mijoz_fish"].ToString();
-                        phone1 = tbPayDebtor.Rows[0]["tel_1"].ToString();
-                        tbPayDebtor.Clear();
-                        tbPayDebtor.Dispose();
-                        Uri u = new Uri("http://turonsavdo.backoffice.uz/api/payhistory/add/");
-
-                        var payload = "{\"filial\": \"" + filial_id + "\",\"som\": \"" + given_som + "\",\"dollar\": \"" + given_dollar + "\",\"fio\": \"" + fio + "\",\"phone1\": \"" + phone1 + "\"}";
-                        //MessageBox.Show(payload);
-                        HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
-                        var t = Task.Run(() => PostURI(u, content));
-                        t.Wait();
-                        if (t.Result == "Error!")
-                        {
-                            Title = "Server bilan bo'glanishda xatolik, iltimos internetni tekshiring!";
-                        }
-                        else if (t.Result != "Error!")
-                        {
-                            Title = "Savdo jo'natilmoqda...";
-                            cmdSendShop = new MySqlCommand("update payhistory set status_server=1 where id='" + tbSendPayHistory.Rows[i]["id"] + "'");
-                            objDBAccess.executeQuery(cmdSendShop);
-                            cmdSendShop.Dispose();
-                        }
+                        Title = "Savdo jo'natilgan...";
                     }
+                    tbDebtRetPro.Clear();
+                    tbDebtRetPro.Dispose();
+                    #endregion
                 }
-                else
+                catch(Exception ex)
                 {
-                    Title = "Savdo jo'natilgan...";
+                    Title = ex.Message;  
                 }
-                tbSendPayHistory.Clear();
-                tbSendPayHistory.Dispose();
-                #endregion
-
-                #region ReturnProduct savdo uchun status 0 jo'natiladi
-                string queryReturnProduct = "select * from returnproduct where sold = 1 and status_server=0";
-                tbSoldRetPro = new DataTable();
-                objDBAccess.readDatathroughAdapter(queryReturnProduct, tbSoldRetPro);
-                if (tbSoldRetPro.Rows.Count > 0)
-                {
-                    int CountSoldRetPro = tbSoldRetPro.Rows.Count;
-                    string return_quan = "", som = "0", dollar = "0", difference = "", barcode = "", val_id = ""; // returnproduct jadvali
-                    for (int i = 0; i < CountSoldRetPro; i++)
-                    {
-                        return_quan = tbSoldRetPro.Rows[i]["return_quantity"].ToString(); //
-                        return_quan = DoubleToStr(return_quan);
-
-                        val_id = tbSoldRetPro.Rows[i]["val_id"].ToString();
-                        if (val_id == "1")
-                        {
-                            som = tbSoldRetPro.Rows[i]["summa"].ToString();
-                            som = DoubleToStr(som);
-                        }
-                        else { som = "0"; }
-
-                        if (val_id == "2")
-                        {
-                            dollar = tbSoldRetPro.Rows[i]["summa"].ToString();
-                            dollar = DoubleToStr(dollar);
-                        }
-                        else { dollar = "0"; }
-
-                        difference = tbSoldRetPro.Rows[i]["difference"].ToString(); //
-                        difference = DoubleToStr(difference);
-                        barcode = tbSoldRetPro.Rows[i]["barcode"].ToString();
-
-                        Uri u = new Uri("http://turonsavdo.backoffice.uz/api/returnproduct/add/");
-
-                        var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \"" + dollar + "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"0\",\"barcode\": \"" + barcode + "\"}";
-                        //MessageBox.Show(payload);
-                        HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
-                        var t = Task.Run(() => PostURI(u, content));
-                        t.Wait();
-                        if (t.Result == "Error!")
-                        {
-                            Title = "Server bilan bo'glanishda xatolik, iltimos internetni tekshiring!";
-                        }
-                        else if (t.Result != "Error!")
-                        {
-                            Title = "Savdo jo'natilmoqda...";
-                            cmdSendShop = new MySqlCommand("update returnproduct set status_server=1 where id='" + tbSoldRetPro.Rows[i]["id"] + "'");
-                            objDBAccess.executeQuery(cmdSendShop);
-                            cmdSendShop.Dispose();
-                        }
-                    }
-                }
-                else
-                {
-                    Title = "Savdo jo'natilgan...";
-                }
-                tbSoldRetPro.Clear();
-                tbSoldRetPro.Dispose();
-                #endregion
-
-                #region ReturnProduct nasiya uchun
-                string queryDebtRetPro = "select * from returnproduct where debt = 1 and status_server = 0";
-                tbDebtRetPro = new DataTable();
-                objDBAccess.readDatathroughAdapter(queryDebtRetPro, tbDebtRetPro);
-                if (tbDebtRetPro.Rows.Count > 0)
-                {
-                    int CountDebtRetPro = tbDebtRetPro.Rows.Count;
-                    string return_quan = "", som = "0", dollar = "0", difference = "", barcode = "", val_id = ""; // returnproduct jadvali
-                    string fio = "", phone1 = "";
-                    for (int i = 0; i < CountDebtRetPro; i++)
-                    {
-                        return_quan = tbSoldRetPro.Rows[i]["return_quantity"].ToString(); //
-                        return_quan = DoubleToStr(return_quan);
-
-                        val_id = tbSoldRetPro.Rows[i]["val_id"].ToString();
-                        if (val_id == "1")
-                        {
-                            som = tbSoldRetPro.Rows[i]["summa"].ToString();
-                            som = DoubleToStr(som);
-                        }
-                        else { som = "0"; }
-
-                        if (val_id == "2")
-                        {
-                            dollar = tbSoldRetPro.Rows[i]["summa"].ToString();
-                            dollar = DoubleToStr(dollar);
-                        }
-                        else { dollar = "0"; }
-
-                        difference = tbSoldRetPro.Rows[i]["difference"].ToString(); //
-                        difference = DoubleToStr(difference);
-                        barcode = tbSoldRetPro.Rows[i]["barcode"].ToString();
-
-                        string queryDebtRetDebtor = "select debtor.mijoz_fish, debtor.tel_1 from debtor inner join debt on debtor.id = debt.debtor_id where debt.shop_id='" + tbDebtRetPro.Rows[i]["shop_id"] + "'";
-                        tbDebtRetDebtor = new DataTable();
-                        objDBAccess.readDatathroughAdapter(queryDebtRetDebtor, tbDebtRetDebtor);
-
-                        fio = tbDebtRetDebtor.Rows[0]["mijoz_fish"].ToString();
-                        phone1 = tbDebtRetDebtor.Rows[0]["tel_1"].ToString();
-                        tbDebtRetDebtor.Clear();
-                        tbDebtRetDebtor.Dispose();
-
-                        Uri u = new Uri("http://turonsavdo.backoffice.uz/api/returnproduct/add/");
-
-                        var payload = "{\"return_quan\": \"" + return_quan + "\",\"som\": \"" + som + "\",\"dollar\": \"" + dollar + "\",\"filial\": \"" + filial_id + "\",\"difference\": \"" + difference + "\",\"status\": \"1\",\"barcode\": \"" + barcode + "\",\"fio\": \"" + fio + "\",\"phone1\": \"" + phone1 + "\"}";
-                        HttpContent content = new StringContent(payload, Encoding.UTF8, "application/json");
-                        var t = Task.Run(() => PostURI(u, content));
-                        t.Wait();
-                        if (t.Result == "Error!")
-                        {
-                            Title = "Server bilan bo'lanishda xatolik, iltimos internetni tekshiring!";
-                        }
-                        else if (t.Result != "Error!")
-                        {
-                            Title = "Savdo jo'natilmoqda...";
-                            cmdSendShop = new MySqlCommand("update returnproduct set status_server=1 where id='" + tbDebtRetPro.Rows[i]["id"] + "'");
-                            objDBAccess.executeQuery(cmdSendShop);
-                            cmdSendShop.Dispose();
-                        }
-                    }
-                }
-                else
-                {
-                    Title = "Savdo jo'natilgan...";
-                }
-                tbDebtRetPro.Clear();
-                tbDebtRetPro.Dispose();
-                #endregion
 
                 send_finish = true;
             }

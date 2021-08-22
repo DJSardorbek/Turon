@@ -29,9 +29,9 @@ namespace SotuvPlatformasi
         public FakturaHisob_ucont()
         {
             InitializeComponent();
-            comboFilial.Items.Add("Filial1");
-            comboFilial.Items.Add("Filial2");
-            comboFilial.Items.Add("Filial3");
+            //comboFilial.Items.Add("Filial1");
+            //comboFilial.Items.Add("Filial2");
+            //comboFilial.Items.Add("Filial3");
         }
 
         public FakturaHisob FakturaHisobs = new FakturaHisob();
@@ -87,7 +87,9 @@ namespace SotuvPlatformasi
         {
             try
             {
-                string url = "http://turonsavdo.backoffice.uz/api/faktura/st2/?fil=" + (comboFilial.SelectedIndex + 3).ToString();
+                _Filial selectedFilial = comboFilial.SelectedItem as _Filial;
+                combo_sel_index = selectedFilial.id.ToString(); 
+                string url = "http://turonsavdo.backoffice.uz/api/faktura/st2/?fil=" + combo_sel_index;
                 string FakturaContent = await GetObject(url);
                 myEffect.Radius = 10;
                 Effect = myEffect;
@@ -207,6 +209,38 @@ namespace SotuvPlatformasi
             {
                 btnNext.IsEnabled = false;
                 btnNext.Opacity = 0.5;
+            }
+        }
+
+        public static bool filial = false;
+        public class _Filial
+        {
+            public int id { get; set; }
+            public string name { get; set; }
+            public string address { get; set; }
+        }
+
+        MainWindow main = (MainWindow)Application.Current.MainWindow;
+        string ContentFilial = "", combo_sel_index = "";
+        List<_Filial> filialArray;
+        private async void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (filial == false && main.TabMenu.SelectedIndex == 7)
+            {
+                string urlFilial = "http://turonsavdo.backoffice.uz/api/filial/";
+                ContentFilial = await GetObject(urlFilial);
+                myEffect.Radius = 10;
+                Effect = myEffect;
+                using (LoadingWindow lw = new LoadingWindow(Simulator))
+                {
+                    lw.ShowDialog();
+                }
+                myEffect.Radius = 0;
+                Effect = myEffect;
+                filialArray = JsonConvert.DeserializeObject<List<_Filial>>(ContentFilial);
+                comboFilial.ItemsSource = filialArray.ToList();
+                comboFilial.DisplayMemberPath = "name";
+                filial = true;
             }
         }
     }
